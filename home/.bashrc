@@ -142,7 +142,7 @@ alias cbwd="pwd | cb"
 # Copy most recent command in bash history
 alias cbhs="cat $HISTFILE | tail -n 1 | cb"
 # Custom Elijah
-function cblink() { readlink -f "$1" | cb; }
+function cbp() { readlink -f "$1" | cb; }
 
 # WIKI
 function wiki
