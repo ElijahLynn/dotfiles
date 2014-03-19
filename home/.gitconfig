@@ -1,0 +1,36 @@
+[user]
+	name = Elijah Lynn\n
+	email = elijah@elijahlynn.net
+[color]
+	ui = true
+[alias]
+	a = add
+	aa = add --all
+	amend = commit --amend
+        br = branch
+        ch = checkout
+	co = commit
+	cp = cherry-pick
+	d = diff
+	dc = diff --cached
+	di = diff
+        echo = "!f() { echo $1 && echo done; }; f"
+	kill = "!f() { git branch -D $1 && git push origin --delete $1; }; f"
+	last = log -1 HEAD
+	lg = log --oneline
+	merges = log --merges --oneline --pretty=format:%Cblue%cD%Cred☃' '%Cgreen%s --since='2 days' 
+	pr = pull-request
+	st = status -s
+	track = "!f() { ([ $# -eq 2 ] && ( echo \"Setting tracking for branch \" $1 \" -> \" $2;git branch --set-upstream $1 $2; ) || ( git for-each-ref --format=\"local: %(refname:short) <--sync--> remote: %(upstream:short)\" refs/heads && echo --Remotes && git remote -v)); }; f"
+	tree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative --all
+	lcm = log --pretty=format:%s -1
+	la = !git config -l | grep alias | cut -c 7-
+[log]
+	abbrevcommit = true
+[diff]
+	tool = meld
+[core]
+	filemode = false 
+	excludesfile = /home/elijah/.gitignore
+[push]
+	default = upstream
