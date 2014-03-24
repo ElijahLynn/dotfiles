@@ -78,10 +78,11 @@ alias pg='ping google.com'
 alias dx='export XDEBUG_CONFIG="idekey=PHPSTORM" && echo "Xdebug activated"'
 alias dxd='unset XDEBUG_CONFIG && echo "Xdebug de-activated"'
 alias drupalcs='phpcs --standard=Drupal --extensions=module,inc,install,test,profile,theme'
+# Why is this here again?
 alias sudo='sudo '
 alias open='xdg-open' # overwrite default open program
 
-#make a sound for when commands finish
+# Make a sound for when commands finish.
 export tada='/home/elijah/bin/sounds/TaDa.ogg'
 alias a='paplay $tada'
 
