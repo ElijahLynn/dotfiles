@@ -68,8 +68,6 @@ alias ........="cd ../../../../../../.."
 alias .........="cd ../../../../../../../.."
 
 # MISC.
-alias fixwifi='sudo rmmod iwlwifi && sudo modprobe iwlwifi 11n_disable=1'
-alias fixvm='sudo apt-get remove virtualbox-dkms -y && sudo apt-get install virtualbox-dkms -y'
 alias sbrc='source ~/.bashrc && echo success'
 alias vbrc='vim ~/.bashrc'
 alias vba='vim ~/.bash_aliases'
