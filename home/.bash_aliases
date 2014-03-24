@@ -7,7 +7,6 @@ alias web="cd ~/websites"
 alias sand='cd ~/websites/sandbox'
 alias d7="cd ~/websites/sandbox/d7"
 alias d8="cd ~/websites/sandbox/d8"
-alias nbc="cd ~/websites/loc.nbc.com"
 
 # GIT
 alias g='git'
