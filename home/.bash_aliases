@@ -15,6 +15,7 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias gg='git tree'
 alias gfa='git fetch --all'
+alias glc='git lcm | cb'
 
 # NBCU
 alias db="drush dbtv"
