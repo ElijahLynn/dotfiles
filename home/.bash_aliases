@@ -44,8 +44,8 @@ alias p7m='cd ~/websites/loc.publisher.nbcuni.com/docroot/profiles/all/modules'
 alias pbl='bundle exec rake build_local'
 
 # Media Village
-alias mdv='cd ~/websites/loc.nbcumedvil.com/docroot'
-alias mdvs='cd ~/websites/loc.nbcumedvil.com/docroot/sites/nbcumedvil'
+alias mdv='cd ~/websites/loc.nbcumv.com/docroot'
+alias mdvs='cd ~/websites/loc.nbcumv.com/docroot/sites/nbcumedvil'
 
 # Shortcut for drush dl --destination=profiles/all/modules/contrib
 p7mod='--destination=profiles/all/modules/contrib'
