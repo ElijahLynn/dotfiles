@@ -93,3 +93,5 @@ alias lbk='sudo hidd --connect 00:1F:20:49:1E:B9'
 # tldr alias https://github.com/rprieto/tldr
 alias tan='tldr'
 
+# Current clock speed
+alias speed='sudo dmidecode -t processor | grep "Speed"'
