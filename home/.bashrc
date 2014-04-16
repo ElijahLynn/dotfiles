@@ -64,7 +64,7 @@ xterm*|rxvt*)
 esac
 
 # CUSTOM PROMPT @see http://beckism.com/2009/02/better_bash_prompt/
-export PS1="\[\e[1m\]________________________________________________________________________________\n\[\e[1;30;47m\]| \$PWD \n \e[0;33m \$(parse_git_branch) \e[m \n| => \[\e[0m\]"
+export PS1="\[\e[1m\]________________________________________________________________________________\n\[\e[1;30;47m\]| \$PWD \n \e[0;33m \$(parse_git_branch) \e[m \n\D{%T}=> \[\e[0m\]"
 
 # Enable color support of ls and also add some handy aliases.
 if [ -x /usr/bin/dircolors ]; then
