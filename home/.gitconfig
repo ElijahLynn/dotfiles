@@ -33,4 +33,4 @@
 	filemode = false 
 	excludesfile = /home/elijah/.gitignore
 [push]
-	default = upstream
+	default = current
