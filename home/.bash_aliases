@@ -95,3 +95,7 @@ alias tan='tldr'
 
 # Current clock speed
 alias speed='sudo dmidecode -t processor | grep "Speed"'
+
+# Restart apache
+alias ar='sudo service apache2 restart'
+
