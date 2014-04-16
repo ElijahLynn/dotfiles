@@ -73,7 +73,7 @@ alias sbrc='source ~/.bashrc && echo success'
 alias vbrc='vim ~/.bashrc'
 alias vba='vim ~/.bash_aliases'
 alias tp='trash-put'
-alias drush6="$HOME/bin/drush/drush"
+alias drush7="$HOME/bin/drush/drush"
 alias dr="drush"
 alias pg='ping google.com'
 alias dx='export XDEBUG_CONFIG="idekey=PHPSTORM" && echo "Xdebug activated"'
