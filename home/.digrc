@@ -1,0 +1,6 @@
+# Turn off version output
++nocmd
+
+# Turn off comments
++nocomments
+
