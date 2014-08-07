@@ -6,7 +6,7 @@
 [alias]
 	a = add
 	aa = add --all
-	amend = commit --amend
+	amend = commit --amend --no-edit
         br = branch
         ch = checkout
 	co = commit
