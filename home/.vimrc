@@ -12,5 +12,3 @@ set scrolloff=200
 " Show line numbers
 set number
 
-" Something to do with Drupal's install files.
-" autocmd BufNewFile,BufRead *.install  set syntax=php
