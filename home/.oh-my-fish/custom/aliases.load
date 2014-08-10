@@ -14,4 +14,4 @@ alias gg="git tree"
 alias ar="sudo service apache2 restart"
 alias g="git"
 alias dr="drush"
-
+alias cdgr="cd (g root)"
