@@ -6,7 +6,7 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
-" Vim Sensible
+" Vim Sensible override
 set scrolloff=200
 
 " Show line numbers
