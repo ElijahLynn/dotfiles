@@ -6,8 +6,3 @@ if [ -f ~/.profile ]; then
     source ~/.profile;
 fi
 
-# Manually source autojump - https://github.com/joelthelion/autojump
-. /usr/share/autojump/autojump.sh
-
-# fix to make tmux load something, I think ~ Elijah
-#  case $- in *i*) . ~/.bashrc;; esac
