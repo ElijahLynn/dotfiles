@@ -1,3 +1,3 @@
 function tel
-	cd ~/websites/loc.telemundo.com/docroot $argv; 
+	cd /home/elijah/websites/loc.telemundo.com/docroot $argv; 
 end
