@@ -13,7 +13,6 @@ alias gdc="git diff --cached"
 alias gg="git tree"
 alias gfa="git fetch --all"
 alias ar="sudo service apache2 restart"
-alias g="git"
 alias dr="drush"
 alias cdgr="cd (g root)"
 
