@@ -1,2 +1,6 @@
 abbr -a 'g=git'
 abbr -a 'hs=homeshick'
+abbr -a 'hst=homeshick track dotfiles'
+abbr -a 'fab=fish_abbreviation_backup'
+abbr -a 'gs=git status'
+abbr -a 'b=bower'
