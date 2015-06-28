@@ -16,7 +16,4 @@ abbr gs 'git status'
 abbr hs homeshick
 abbr hst 'homeshick track dotfiles'
 abbr ll 'ls -alh'
-abbr p7 'cd /home/elijah/websites/Publisher7/docroot'
-abbr sand 'cd /home/elijah/websites/sandbox'
-abbr web 'cd /home/elijah/websites'
 abbr ytd 'youtube-dl -t'
