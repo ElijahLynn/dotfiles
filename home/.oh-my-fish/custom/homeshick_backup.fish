@@ -17,7 +17,6 @@ end
 # Commit any dotfiles changes.
 if not git diff --exit-code; or
    not git diff --cached --exit-code; or
-   git ls-files --other --exclude-standard --directory;
 
        # Update dotfiles.
        git add --all
