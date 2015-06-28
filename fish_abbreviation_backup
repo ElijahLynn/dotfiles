@@ -23,5 +23,6 @@ abbr j autojump
 abbr ll 'ls -alh'
 abbr p7 'cd /home/elijah/websites/Publisher7/docroot'
 abbr sand 'cd /home/elijah/websites/sandbox'
+abbr test foo
 abbr web 'cd /home/elijah/websites'
 abbr ytd 'youtube-dl -t'
