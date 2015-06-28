@@ -7,6 +7,7 @@ abbr cdhs 'cd ~/.homesick/repos/dotfiles/home/'
 abbr d8 'cd /home/elijah/websites/sandbox/d8/'
 abbr dc 'drush cc all'
 abbr d drush
+abbr foo star
 abbr gdc 'git diff --cached'
 abbr gd 'git diff'
 abbr gfa 'git fetch --all'
