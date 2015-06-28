@@ -108,7 +108,6 @@ function z -d "Jump to a recent directory."
                 if( dx < 86400 ) return rank * 2
                 if( dx < 604800 ) return rank / 2
                 return rank / 4
-                 echo $target
             }
             function output(files, out, common) {
                 # list or return the desired directory
