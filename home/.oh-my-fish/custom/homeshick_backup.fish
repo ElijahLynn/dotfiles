@@ -1,7 +1,7 @@
 #! /usr/bin/fish
 # Runs every 5 minutes via crontabz.
 
-notify-send -t 700 $SSH_AUTH_SOCK
+notify-send -t 1000 $SSH_AUTH_SOCK
 source $HOME/.keychain/(hostname)-fish
 notify-send -t 1000 $SSH_AGENT_PID
 
