@@ -27,7 +27,8 @@ end
 
 
 # Export Fish abbreviations and commit them.
-if test $argv[0] = yes
+if false
+#if test $argv[0] = yes
 
     abbr --show | sort > fish_abbreviation_backup
     if not git diff --exit-code fish_abbreviation_backup
