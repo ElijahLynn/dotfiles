@@ -10,6 +10,7 @@ abbr --show | sort > fish_abbreviation_backup;
 if not git diff --exit-code fish_abbreviation_backup
     git add fish_abbreviation_backup
     git commit --message "Update Fish abbreviations"
+    set -U commits_made 1
 end
 
 # Commit any dotfiles changes.
@@ -17,15 +18,18 @@ if not git diff --exit-code;
    not git diff --cached --exit-code;
    git ls-files --other --exclude-standard --directory;
 
-        # Update dotfiles.
-        git add --all
-        git commit --message "Update dotfiles"
+       # Update dotfiles.
+       git add --all
+       git commit --message "Update dotfiles"
+       set -u commits_made 1
+end
 
-        # Push & Notify.
-        git push
-        if test (git rev-parse --verify master) = (git rev-parse --verify origin/master)
-            notify-send --expire-time=1000 "Dotfiles updated and pushed to Github"
-        else
-            notify-send --expire-time=1000 "There was a problem pushing your dotfiles to Github"
-        end
+if commits_made
+    # Push & Notify.
+    git push
+    if test (git rev-parse --verify master) = (git rev-parse --verify origin/master)
+        notify-send --expire-time=1000 "Dotfiles updated and pushed to Github"
+    else
+        notify-send --expire-time=1000 "There was a problem pushing your dotfiles to Github"
+    end
 end
