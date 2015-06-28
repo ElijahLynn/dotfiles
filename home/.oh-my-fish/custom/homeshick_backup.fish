@@ -16,7 +16,7 @@ if not git diff --exit-code
 end
 
 # Push & Notify
-if git diff 
+if not git diff
     git push
     notify-send "Dotfiles updated and pushed to Github"
 end
