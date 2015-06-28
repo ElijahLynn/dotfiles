@@ -1,5 +1,5 @@
 #! /usr/bin/fish
-# Runs every 5 minutes via crontabz.
+# Runs every 5 minutes via crontab.
 
 source $HOME/.keychain/(hostname)-fish
 set -x -U SSH_AGENT_PID 1431
