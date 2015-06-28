@@ -24,7 +24,7 @@ function z -d "Jump to a recent directory."
     # add entries
     if [ "$argv[1]" = "--add" ]
         set -e argv[1]
-
+           echo "inside entries"
         # $HOME isn't worth matching
         [ "$argv" = "$HOME" ]; and return
 
