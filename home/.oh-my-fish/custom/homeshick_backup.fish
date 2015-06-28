@@ -3,7 +3,7 @@
 
 notify-send -t 1000 $SSH_AUTH_SOCK
 source $HOME/.keychain/(hostname)-fish
-notify-send --expire-time=1000 $SSH_AGENT_PID
+notify-send -t 1000 $SSH_AGENT_PID
 
 cd $HOME/.homesick/repos/dotfiles
 
