@@ -11,7 +11,7 @@ if not git diff --exit-code fish_abbreviation_backup
     source $HOME/.oh-my-fish/custom/fish_abbreviation_backup
     git add fish_abbreviation_backup
     git commit --message "Update Fish abbreviations"
-    set commits_made yes
+    set push_needed yes
 end
 
 # Commit any dotfiles changes.
@@ -22,11 +22,11 @@ if not git diff --exit-code; or
        # Update dotfiles.
        git add --all
        git commit --message "Update dotfiles"
-       set  commits_made yes
+       set push_needed yes
 end
 
 # Push & Notify.
-if test $commits_made = yes
+if test $push_needed = yes
     git push
     if test (git rev-parse --verify master) = (git rev-parse --verify origin/master)
         notify-send --expire-time=1000 "Dotfiles updated and pushed to Github"
