@@ -27,6 +27,7 @@ end
 
 
 if $argv
+ echo (count $argv)
  echo it is yes
  else
  echo it is not
