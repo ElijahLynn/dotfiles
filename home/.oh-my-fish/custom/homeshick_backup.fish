@@ -1,18 +1,21 @@
 #! /usr/bin/fish
-# Runs every 5 minutes.
+# Runs every minute via crontab.
 
-command notify-alert cron1
-
-#also backup abbr --show here.
-
+# Export Fish abbreviations and commit them.
 cd $HOME/.homesick/repos/dotfiles
-command notify-alert cron
-
-if false
-    command git add --update
-    command git commit -m "Update Sunday.... list files"
-    command notify-alert "dotfiles updated and pushed, link to commit: list of files"
+abbr --show | sort > fish_abbreviation_backup
+if not git diff --exit-code fish_abbreviation_backup
+    git add fish_abbreviation_backup
+    git commit --message "Update Fish abbreviations"
 end
 
+# Commit any dotfiles changes.
+if not git diff --exit-code
+    git add --all
+    git commit --message "Update dotfiles"
+end
 
-
+# Push & Notify
+if git push
+    notify-send "Dotfiles updated and pushed to Github"
+end
