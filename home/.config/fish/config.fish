@@ -17,6 +17,6 @@ set fish_theme agnoster
 # Load Homeshick
 . $HOME/.homesick/repos/homeshick/homeshick.fish
 
-if status --is-interactive
+if not status --is-interactive
   keychain --eval --quiet --quiet $HOME/.ssh/id_rsa
 end
