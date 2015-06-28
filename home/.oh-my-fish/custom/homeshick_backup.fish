@@ -1,5 +1,5 @@
 #! /usr/bin/fish
-# Runs every minute via crontab.
+# Runs every minute via crontab.1
 
 cd $HOME/.homesick/repos/dotfiles
 
