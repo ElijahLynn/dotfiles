@@ -1,8 +1,8 @@
 #! /usr/bin/fish
 # Runs every 5 minutes via crontabz.
 
-notify-send -t 1000 $SSH_AUTH_SOCK
 source $HOME/.keychain/(hostname)-fish
+set -x -U SSH_AGENT_PID 1431
 notify-send -t 1000 $SSH_AGENT_PID
 
 cd $HOME/.homesick/repos/dotfiles
