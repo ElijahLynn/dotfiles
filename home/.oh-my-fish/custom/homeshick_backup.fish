@@ -1,7 +1,7 @@
 #! /usr/bin/fish
 # Runs every 5 minutes via crontab.
 
-AGENT="ssh-agent -s"
+set AGENT ssh-agent -s
 
 cd $HOME/.homesick/repos/dotfiles
 
