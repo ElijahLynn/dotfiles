@@ -12,8 +12,8 @@ source $HOME/.keychain/(hostname)-fish
 # Export Fish abbreviations and commit them.
 abbr --show | sort > fish_abbreviation_backup;
 if not git diff --exit-code fish_abbreviation_backup
-    # fish doesn't sort abbr --show yet
-    # @see
+    # fish doesn't sort abbr --show yet so lets source it in as such.
+    # @see https://github.com/fish-shell/fish-shell/issues/2156
     source $HOME/.oh-my-fish/custom/fish_abbreviation_backup
 
     git add fish_abbreviation_backup
