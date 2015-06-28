@@ -1,3 +1,3 @@
 function cp
-	command	cp -p $argv
+	command	cp --preserve=mode,ownership,timestamps $argv
 end
