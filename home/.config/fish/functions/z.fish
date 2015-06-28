@@ -17,10 +17,10 @@
 
 
 function z -d "Jump to a recent directory."
-    
+
     set -l __Z_DATA "$HOME/.z"
     touch $__Z_DATA
-
+    echo "inside z"
     # add entries
     if [ "$argv[1]" = "--add" ]
         set -e argv[1]
@@ -30,7 +30,7 @@ function z -d "Jump to a recent directory."
 
 		set -l tempfile (mktemp $__Z_DATA.XXXXXX)
 		test -f $tempfile; or return
-		
+
         # maintain the file
         awk -v path="$argv" -v now=(date +%s) -F"|" '
             BEGIN {
@@ -55,17 +55,17 @@ function z -d "Jump to a recent directory."
                 } else for( x in rank ) print x "|" rank[x] "|" time[x]
             }
         ' $__Z_DATA ^/dev/null > $tempfile
-        
+
         mv -f $tempfile $__Z_DATA
 
-  
+
         else
             # list/go
             set -l last ''
             set -l list 0
             set -l typ ''
             set -l fnd ''
-            
+
             while [ (count $argv) -gt 0 ]
                 switch "$argv[1]"
                     case -- '-h'
@@ -168,7 +168,7 @@ function z -d "Jump to a recent directory."
                 }
             }
             ' $__Z_DATA)
-            
+
 
 
             rm -f $tempfile
@@ -177,7 +177,7 @@ function z -d "Jump to a recent directory."
 
         end
     end
-	
+
 
 function __z_auto_add --on-variable  PWD  -d 'Set up automatic population of the directory list for z'
 	 z --add $PWD
