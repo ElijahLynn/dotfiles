@@ -2,6 +2,7 @@
 # Runs every 5 minutes via crontab.
 # Needs patched NotifyOSD for notify-send --expire-time to work.
 # @see http://www.webupd8.org/2014/04/configurable-notification-bubbles-for.html
+# @todo Make commit messages a bit more detailed about what files changed.
 
 cd $HOME/.homesick/repos/dotfiles
 
