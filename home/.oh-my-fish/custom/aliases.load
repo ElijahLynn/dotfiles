@@ -3,6 +3,5 @@ alias p7cu="cd /home/elijah/websites/loc.publisher7.com/docroot/profiles/publish
 alias p7m="cd /home/elijah/websites/loc.publisher7.com/docroot/profiles/publisher/modules"
 alias d7md="cd /home/elijah/websites/sandbox/d7md"
 alias d7="cd /home/elijah/websites/sandbox/d7"
-alias d8="cd /home/elijah/websites/sandbox/d8"
 alias cdgr="cd (g root)"
 
