@@ -1,9 +1,6 @@
 #! /usr/bin/fish
 # Runs every minute via crontab.
 
-
-notify-send whoami
-
 # Export Fish abbreviations and commit them.
 cd $HOME/.homesick/repos/dotfiles
 abbr --show | sort > fish_abbreviation_backup
