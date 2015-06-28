@@ -19,3 +19,4 @@ set fish_theme agnoster
 
 if status --is-interactive
   keychain --eval --quiet --quiet $HOME/.ssh/id_rsa
+end
