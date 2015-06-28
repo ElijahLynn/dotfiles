@@ -12,6 +12,7 @@ abbr d drush
 abbr fp file_path
 abbr gdc 'git diff --cached'
 abbr gd 'git diff'
+abbr gdh 'git diff HEAD^'
 abbr gfa 'git fetch --all'
 abbr gg 'git tree'
 abbr g git
