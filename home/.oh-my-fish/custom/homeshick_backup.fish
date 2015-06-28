@@ -2,7 +2,7 @@
 # Runs every 5 minutes via crontab.
 
 source $HOME/.keychain/(hostname)-fish
-set -x -U SSH_AGENT_PID 1431
+#set -x -U SSH_AGENT_PID 1431
 notify-send -t 1000 $SSH_AGENT_PID
 
 cd $HOME/.homesick/repos/dotfiles
