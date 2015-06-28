@@ -1,7 +1,11 @@
 #! /usr/bin/fish
 # Runs every minute via crontab.
 
+notify-send echo $HOME
+
 HOME=/home/elijah
+
+notify-send whoami
 
 # Export Fish abbreviations and commit them.
 cd $HOME/.homesick/repos/dotfiles
@@ -18,6 +22,6 @@ if not git diff --exit-code
 end
 
 # Push & Notify
-if git push
+if not git
     notify-send "Dotfiles updated and pushed to Github"
 end
