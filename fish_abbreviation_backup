@@ -1,7 +1,6 @@
 abbr g git
 abbr hs homeshick
 abbr hst 'homeshick track dotfiles'
-abbr fab fish_abbreviation_backup
 abbr gs 'git status'
 abbr b bower
 abbr gfa 'git fetch --all'
@@ -13,4 +12,4 @@ abbr dc 'drush cc all'
 abbr ll 'ls -alh'
 abbr j autojump
 abbr as 'abbr --show'
-abbr dr drush
+abbr d drush
