@@ -26,9 +26,13 @@ if not git diff --exit-code; not git diff --cached --exit-code; git ls-files --o
 end
 
 
+if test $argv[0] = yes
+ echo it is yes
+ else
+ echo it is not
+end
 # Export Fish abbreviations and commit them.
 if false
-#if test $argv[0] = yes
 
     abbr --show | sort > fish_abbreviation_backup
     if not git diff --exit-code fish_abbreviation_backup
