@@ -1,15 +1,16 @@
-abbr -a 'g=git'
-abbr -a 'hs=homeshick'
-abbr -a 'hst=homeshick track dotfiles'
-abbr -a 'fab=fish_abbreviation_backup'
-abbr -a 'gs=git status'
-abbr -a 'b=bower'
-abbr -a 'gfa=git fetch --all'
-abbr -a 'gd=git diff'
-abbr -a 'cdhs=cd ~/.homesick/repos/dotfiles/home/'
-abbr -a 'cdff=cd ~/.config/fish/functions'
-abbr -a 'ytd=youtube-dl -t'
-abbr -a 'dc=drush cc all'
-abbr -a 'll=ls -alh'
-abbr -a 'j=autojump'
-abbr -a 'as=abbr --show'
+abbr g git
+abbr hs homeshick
+abbr hst 'homeshick track dotfiles'
+abbr fab fish_abbreviation_backup
+abbr gs 'git status'
+abbr b bower
+abbr gfa 'git fetch --all'
+abbr gd 'git diff'
+abbr cdhs 'cd ~/.homesick/repos/dotfiles/home/'
+abbr cdff 'cd ~/.config/fish/functions'
+abbr ytd 'youtube-dl -t'
+abbr dc 'drush cc all'
+abbr ll 'ls -alh'
+abbr j autojump
+abbr as 'abbr --show'
+abbr dr drush
