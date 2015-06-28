@@ -10,13 +10,13 @@ if not git diff --exit-code fish_abbreviation_backup
 end
 
 # Commit any dotfiles changes.
-if not git diff --exit-code
+if not git diff --exit-code; git diff --cached --exit-code
     git add --all
     git commit --message "Update dotfiles"
 end
 
 # Push & Notify
-if not git diff
+if git ls-files --other --exclude-standard --directory;
     git push
     notify-send "Dotfiles updated and pushed to Github"
 end
