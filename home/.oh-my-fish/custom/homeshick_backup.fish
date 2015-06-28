@@ -22,6 +22,8 @@ if not git diff --exit-code; or
        git add --all
        git commit --message "Update dotfiles"
        set -g commits_made yes
+
+       echo $commits_made;
 end
 
 echo $commits_made;
