@@ -1,9 +1,11 @@
 #! /usr/bin/fish
 # Runs every 5 minutes via crontab.
 
-source $HOME/.keychain/(hostname)-fish
-
 cd $HOME/.homesick/repos/dotfiles
+
+# keychain support
+# @see config.fish
+source $HOME/.keychain/(hostname)-fish
 
 # Export Fish abbreviations and commit them.
 abbr --show | sort > fish_abbreviation_backup;
