@@ -1,9 +1,6 @@
 #! /usr/bin/fish
 # Runs every minute via crontab.
 
-notify-send echo $HOME
-
-HOME=/home/elijah
 
 notify-send whoami
 
