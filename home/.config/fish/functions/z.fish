@@ -20,11 +20,9 @@ function z -d "Jump to a recent directory."
 
     set -l __Z_DATA "$HOME/.z"
     touch $__Z_DATA
-    echo "inside z"
     # add entries
     if [ "$argv[1]" = "--add" ]
         set -e argv[1]
-           echo "inside entries"
         # $HOME isn't worth matching
         [ "$argv" = "$HOME" ]; and return
 
