@@ -4,7 +4,7 @@
 cd $HOME/.homesick/repos/dotfiles
 
 # Commit any dotfiles changes.
-if not git diff --exit-code; git diff --cached --exit-code; git ls-files --other --exclude-standard --directory
+if not git diff --exit-code; not git diff --cached --exit-code; git ls-files --other --exclude-standard --directory
     # Export Fish abbreviations and commit them.
     abbr --show | sort > fish_abbreviation_backup
     if not git diff --exit-code fish_abbreviation_backup
@@ -18,6 +18,10 @@ if not git diff --exit-code; git diff --cached --exit-code; git ls-files --other
 
     # Push & Notify.
     git push
-    notify-send "Dotfiles updated and pushed to Github"
+    if test (git rev-parse --verify master) = (git rev-parse --verify origin/master)
+        notify-send "Dotfiles updated and pushed to Github"
+    else
+        notify-send "There was a problem pushing your dotfiles to Github"
+    end
 end
 
