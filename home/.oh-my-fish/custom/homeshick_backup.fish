@@ -14,8 +14,8 @@ if not git diff --exit-code fish_abbreviation_backup
 end
 
 # Commit any dotfiles changes.
-if not git diff --exit-code;
-   not git diff --cached --exit-code;
+if not git diff --exit-code; or
+   not git diff --cached --exit-code; or
    git ls-files --other --exclude-standard --directory;
 
        # Update dotfiles.
