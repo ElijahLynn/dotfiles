@@ -22,5 +22,5 @@ complete -c z -s l -x --description 'list all dirs matching query (by frecency)'
 complete -c z -s r -x --description 'goes to highest ranked dir matching query'
 complete -c z -s h -x --description 'see the help'
 
-complete -f -c z -a '(__complete_z)' --description 'z completer'
- 
+complete -f -c z -a '(__complete_z)' --description 'z completezzr'
+
