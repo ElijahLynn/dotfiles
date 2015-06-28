@@ -1,0 +1,26 @@
+abbr ar 'sudo service apache2 restart'
+abbr as 'abbr --show'
+abbr b bower
+abbr cb clipboard
+abbr cdff 'cd ~/.config/fish/functions'
+abbr cdgr 'cd /home/elijah/.homesick/repos/dotfiles'
+abbr cdhs 'cd ~/.homesick/repos/dotfiles/home/'
+abbr d7 'cd /home/elijah/websites/sandbox/d7'
+abbr d8 'cd /home/elijah/websites/sandbox/d8/'
+abbr dc 'drush cc all'
+abbr d drush
+abbr fp file_path
+abbr gdc 'git diff --cached'
+abbr gd 'git diff'
+abbr gfa 'git fetch --all'
+abbr gg 'git tree'
+abbr g git
+abbr gs 'git status'
+abbr hs homeshick
+abbr hst 'homeshick track dotfiles'
+abbr j autojump
+abbr ll 'ls -alh'
+abbr p7 'cd /home/elijah/websites/Publisher7/docroot'
+abbr sand 'cd /home/elijah/websites/sandbox'
+abbr web 'cd /home/elijah/websites'
+abbr ytd 'youtube-dl -t'
