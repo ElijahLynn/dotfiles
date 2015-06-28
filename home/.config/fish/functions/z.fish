@@ -101,6 +101,7 @@ function z -d "Jump to a recent directory."
 			test -f $tempfile; or return
 
             set -l target (awk -v t=(date +%s) -v list="$list" -v typ="$typ" -v q="$fnd" -v tmpfl="$tempfile" -F"|" '
+            echo 'inside target'
                 function frecent(rank, time) {
                 # relate frequency and time
                 dx = t - time
