@@ -5,6 +5,7 @@ abbr cb clipboard
 abbr cdff 'cd ~/.config/fish/functions'
 abbr cdgr 'cd /home/elijah/.homesick/repos/dotfiles'
 abbr cdhs 'cd ~/.homesick/repos/dotfiles/home/'
+abbr d7 'cd /home/elijah/websites/sandbox/d7'
 abbr d8 'cd /home/elijah/websites/sandbox/d8/'
 abbr dc 'drush cc all'
 abbr d drush
