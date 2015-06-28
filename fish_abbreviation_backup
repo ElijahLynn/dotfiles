@@ -3,6 +3,7 @@ abbr as 'abbr --show'
 abbr b bower
 abbr cb clipboard
 abbr cdff 'cd ~/.config/fish/functions'
+abbr cdgr 'cd /home/elijah/.homesick/repos/dotfiles'
 abbr cdhs 'cd ~/.homesick/repos/dotfiles/home/'
 abbr d8 'cd /home/elijah/websites/sandbox/d8/'
 abbr dc 'drush cc all'
