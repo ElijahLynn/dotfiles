@@ -22,3 +22,7 @@ set fish_theme agnoster
 if not status --is-interactive
   keychain --eval --quiet --quick $HOME/.ssh/id_rsa
 end
+
+# z support
+# @see https://github.com/leiserfg/z-fish
+
