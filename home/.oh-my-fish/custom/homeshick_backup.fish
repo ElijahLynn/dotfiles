@@ -25,7 +25,7 @@ if not git diff --exit-code; or
 end
 
 # Push & Notify.
-if test $commits_made = 'yes'
+if test $commits_made = no
     git push
     if test (git rev-parse --verify master) = (git rev-parse --verify origin/master)
         notify-send --expire-time=1000 "Dotfiles updated and pushed to Github"
