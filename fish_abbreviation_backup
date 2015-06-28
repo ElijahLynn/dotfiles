@@ -2,6 +2,7 @@ abbr ar 'sudo service apache2 restart'
 abbr as 'abbr --show'
 abbr b bower
 abbr cb clipboard
+abbr cddf 'cd /home/elijah/.homesick/repos/dotfiles'
 abbr cdff 'cd ~/.config/fish/functions'
 abbr cdgr 'cd /home/elijah/.homesick/repos/dotfiles'
 abbr cdhs 'cd ~/.homesick/repos/dotfiles/home/'
