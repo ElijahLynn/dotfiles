@@ -5,16 +5,17 @@ source $HOME/.keychain/(hostname)-fish
 
 cd $HOME/.homesick/repos/dotfiles
 
+# Export Fish abbreviations and commit them.
+abbr --show | sort > fish_abbreviation_backup;
+if not git diff --exit-code fish_abbreviation_backup
+    git add fish_abbreviation_backup
+    git commit --message "Update Fish abbreviations"
+end
+
 # Commit any dotfiles changes.
-if abbr --show | sort > fish_abbreviation_backup;
-   not git diff --exit-code;
+if not git diff --exit-code;
    not git diff --cached --exit-code;
    git ls-files --other --exclude-standard --directory;
-        # Export Fish abbreviations and commit them.
-        if not git diff --exit-code fish_abbreviation_backup
-            git add fish_abbreviation_backup
-            git commit --message "Update Fish abbreviations"
-        end
 
         # Update dotfiles.
         git add --all
