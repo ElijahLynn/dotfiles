@@ -1,6 +1,7 @@
 #! /usr/bin/fish
 # Runs every 5 minutes via crontabz.
-
+notify-send $SSH_AUTH_SOCK
+notify-send $SSH_AGENT_PID
 source $HOME/.keychain/(hostname)-fish
 
 cd $HOME/.homesick/repos/dotfiles
