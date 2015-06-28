@@ -8,6 +8,7 @@ cd $HOME/.homesick/repos/dotfiles
 # Export Fish abbreviations and commit them.
 abbr --show | sort > fish_abbreviation_backup;
 if not git diff --exit-code fish_abbreviation_backup
+    source $HOME/.oh-my-fish/custom/fish_abbreviation_backup
     git add fish_abbreviation_backup
     git commit --message "Update Fish abbreviations"
     set commits_made yes
