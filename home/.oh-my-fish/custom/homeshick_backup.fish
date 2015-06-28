@@ -24,6 +24,8 @@ if not git diff --exit-code;
        set -g commits_made yes
 end
 
+echo $commits_made;
+
 if $commits_made = 'yes'
     # Push & Notify.
     git push
