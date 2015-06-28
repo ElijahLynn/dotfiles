@@ -4,9 +4,8 @@
 cd $HOME/.homesick/repos/dotfiles
 
 # Commit any dotfiles changes.
-if not git diff --exit-code; not git diff --cached --exit-code; git ls-files --other --exclude-standard --directory
+if not git diff --exit-code; not git diff --cached --exit-code; git ls-files --other --exclude-standard --directory; abbr --show | sort > fish_abbreviation_backup
     # Export Fish abbreviations and commit them.
-    abbr --show | sort > fish_abbreviation_backup
     if not git diff --exit-code fish_abbreviation_backup
         git add fish_abbreviation_backup
         git commit --message "Update Fish abbreviations"
