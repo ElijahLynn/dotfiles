@@ -22,14 +22,10 @@ if not git diff --exit-code; or
        git add --all
        git commit --message "Update dotfiles"
        set -g commits_made yes
-       echo $commits_made;
-       notify-send -t 1000 $commits_made;
 end
 
-echo $commits_made;
-
-if $commits_made = 'yes'
-    # Push & Notify.
+# Push & Notify.
+if test $commits_made = 'yes'
     git push
     if test (git rev-parse --verify master) = (git rev-parse --verify origin/master)
         notify-send --expire-time=1000 "Dotfiles updated and pushed to Github"
