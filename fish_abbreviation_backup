@@ -2,6 +2,7 @@ abbr ar 'sudo service apache2 restart'
 abbr as 'abbr --show'
 abbr b bower
 abbr cb clipboard
+abbr c cat
 abbr cdgr 'cd (git root)'
 abbr dc 'drush cc all'
 abbr d drush
