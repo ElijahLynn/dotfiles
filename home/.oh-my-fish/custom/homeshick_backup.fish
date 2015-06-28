@@ -4,7 +4,7 @@
 cd $HOME/.homesick/repos/dotfiles
 
 # keychain support
-# @see config.fish
+# @see http://superuser.com/a/933903/30982
 source $HOME/.keychain/(hostname)-fish
 
 # Export Fish abbreviations and commit them.
