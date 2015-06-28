@@ -26,7 +26,7 @@ if not git diff --exit-code; not git diff --cached --exit-code; git ls-files --o
 end
 
 
-if test $argv[1]
+if $argv[1]
  echo it is yes
  else
  echo it is not
