@@ -1,1 +1,0 @@
-/home/elijah/.homesick/repos/dotfiles/home/.config/fish/functions/cb.fish
