@@ -97,6 +97,7 @@ function z -d "Jump to a recent directory."
 
 			set -l tempfile (mktemp $__Z_DATA.XXXXXX)
 			test -f $tempfile; or return
+			echo $target
 
             set -l target (awk -v t=(date +%s) -v list="$list" -v typ="$typ" -v q="$fnd" -v tmpfl="$tempfile" -F"|" '
                 function frecent(rank, time) {
@@ -170,7 +171,6 @@ function z -d "Jump to a recent directory."
 
 
             rm -f $tempfile
-echo $target
             [ ! $target ]; or cd $target
 
         end
