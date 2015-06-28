@@ -10,7 +10,7 @@ abbr --show | sort > fish_abbreviation_backup;
 if not git diff --exit-code fish_abbreviation_backup
     git add fish_abbreviation_backup
     git commit --message "Update Fish abbreviations"
-    set -U commits_made 1
+    set -U commits_made yes
 end
 
 # Commit any dotfiles changes.
@@ -21,10 +21,10 @@ if not git diff --exit-code;
        # Update dotfiles.
        git add --all
        git commit --message "Update dotfiles"
-       set -u commits_made 1
+       set -u commits_made yes
 end
 
-if commits_made
+if $commits_made = 'yes'
     # Push & Notify.
     git push
     if test (git rev-parse --verify master) = (git rev-parse --verify origin/master)
