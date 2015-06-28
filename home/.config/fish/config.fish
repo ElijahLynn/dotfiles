@@ -18,7 +18,7 @@ set fish_theme agnoster
 . $HOME/.homesick/repos/homeshick/homeshick.fish
 
 # keychain support
-# @see 
+# @see http://www.funtoo.org/Keychain
 if not status --is-interactive
   keychain --eval --quiet --quick $HOME/.ssh/id_rsa
 end
