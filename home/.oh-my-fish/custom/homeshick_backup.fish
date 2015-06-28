@@ -20,8 +20,8 @@ if not git diff --exit-code; not git diff --cached --exit-code; git ls-files --o
     # Push & Notify.
     git push
     if test (git rev-parse --verify master) = (git rev-parse --verify origin/master)
-        notify-send "Dotfiles updated and pushed to Github"
+        notify-send --expire-time=1000 "Dotfiles updated and pushed to Github"
     else
-        notify-send "There was a problem pushing your dotfiles to Github"
+        notify-send --expire-time=1000 "There was a problem pushing your dotfiles to Github"
     end
 end
