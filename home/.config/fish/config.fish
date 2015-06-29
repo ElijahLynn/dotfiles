@@ -22,3 +22,5 @@ set fish_theme agnoster
 if not status --is-interactive
   keychain --eval --quiet --quick $HOME/.ssh/id_rsa
 end
+
+tmux_pane_title
