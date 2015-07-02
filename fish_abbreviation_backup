@@ -20,4 +20,5 @@ abbr ll 'ls --all --human-readable -l'
 abbr logout 'gnome-session-quit'
 abbr lt 'lt --port 80 --subdomain elijah'
 abbr melt 'melt -filter dynamictext bgcolour="#50FFFFFF" size=10 -progress'
+abbr se sudoedit
 abbr ytd 'youtube-dl -t'
