@@ -6,6 +6,7 @@ abbr c cat
 abbr cdgr 'cd (git root)'
 abbr dc 'drush cc all'
 abbr d drush
+abbr fb firebase
 abbr fp file_path
 abbr gdc 'git diff --cached'
 abbr gd 'git diff'
