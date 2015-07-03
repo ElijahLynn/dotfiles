@@ -24,4 +24,4 @@ if not status --is-interactive
 end
 
 # Custom function to load so tmux will change the title of panes.
-tmux_pane_title
+#tmux_pane_title
