@@ -1,5 +1,1 @@
-function rm
-	if not status --is-login; and status --is-interactive
-	    echo "This is not the command you are looking for, use trash-put instead."; false
-        end
-end
+/home/elijah/.homesick/repos/dotfiles/home/.homesick/repos/dotfiles/home/.config/fish/functions/rm.fish
