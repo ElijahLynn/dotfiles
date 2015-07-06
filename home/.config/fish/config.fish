@@ -19,7 +19,7 @@ set fish_theme agnoster
 
 # keychain support
 # @see http://superuser.com/a/933903/30982
-if not status --is-interactive
+if not (status --is-interactive)
   keychain --eval --quiet --quick $HOME/.ssh/id_rsa
 end
 
