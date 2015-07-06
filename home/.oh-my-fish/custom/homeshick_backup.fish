@@ -36,8 +36,8 @@ end
 if test $push_needed = yes
     git push
     if test (git rev-parse --verify master) = (git rev-parse --verify origin/master)
-        notify-send --expire-time=1000 "Dotfiles updated and pushed to Github"
+        notify-send --expire-time=3000 "Dotfiles updated and pushed to Github"
     else
-        notify-send --expire-time=1000 "There was a problem pushing your dotfiles to Github"
+        notify-send --expire-time=3000 "There was a problem pushing your dotfiles to Github"
     end
 end
