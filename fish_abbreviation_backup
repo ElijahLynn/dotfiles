@@ -7,7 +7,6 @@ abbr cdgr 'cd (git root)'
 abbr dc 'drush cc all'
 abbr d drush
 abbr fb firebase
-abbr foo test
 abbr fp file_path
 abbr gau 'git add --update'
 abbr gdc 'git diff --cached'
@@ -24,5 +23,4 @@ abbr logout 'gnome-session-quit'
 abbr lt 'lt --port 80 --subdomain elijah'
 abbr melt 'melt -filter dynamictext bgcolour="#50FFFFFF" size=10 -progress'
 abbr se sudoedit
-abbr test foo
 abbr ytd 'youtube-dl -t'
