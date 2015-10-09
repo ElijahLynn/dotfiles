@@ -25,3 +25,5 @@ end
 
 # Custom function to load so tmux will change the title of panes.
 #tmux_pane_title
+
+set -g -x PATH /home/elijah/Android/Sdk/platform-tools/ $PATH
