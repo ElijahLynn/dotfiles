@@ -24,6 +24,7 @@ abbr lt 'lt --port 80 --subdomain elijah'
 abbr melt 'melt -filter dynamictext bgcolour="#50FFFFFF" size=10 -progress'
 abbr se sudoedit
 abbr st speedtest
+abbr sys 'tail -f -n 500 /var/log/syslog'
 abbr toff 'tscreen off'
 abbr tok stoken
 abbr ton 'tscreen on'
