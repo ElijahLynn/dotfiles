@@ -25,5 +25,6 @@ abbr melt 'melt -filter dynamictext bgcolour="#50FFFFFF" size=10 -progress'
 abbr se sudoedit
 abbr st speedtest
 abbr toff 'tscreen off'
+abbr tok stoken
 abbr ton 'tscreen on'
 abbr ytd 'youtube-dl -t'
