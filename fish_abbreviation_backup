@@ -5,7 +5,7 @@ abbr cb clipboard
 abbr c cat
 abbr cdgr 'cd (git root)'
 abbr dcd 'drush clear-cache drush'
-abbr dc 'drush cc all'
+abbr dc 'drush clear-cache all'
 abbr d drush
 abbr fb firebase
 abbr fp file_path
