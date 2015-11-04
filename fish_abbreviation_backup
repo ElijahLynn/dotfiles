@@ -4,8 +4,8 @@ abbr b bower
 abbr cb clipboard
 abbr c cat
 abbr cdgr 'cd (git root)'
-abbr dcd 'drush clear-cache drush'
-abbr dc 'drush clear-cache all'
+abbr dcd 'drush cache-clear drush'
+abbr dc 'drush cache-clear all'
 abbr d drush
 abbr fb firebase
 abbr fp file_path
