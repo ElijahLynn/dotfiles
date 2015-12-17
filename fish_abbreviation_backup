@@ -7,6 +7,7 @@ abbr cdgr 'cd (git root)'
 abbr dcd 'drush cache-clear drush'
 abbr dc 'drush cache-clear all'
 abbr d drush
+abbr ds 'drush status'
 abbr fb firebase
 abbr fp file_path
 abbr gau 'git add --update'
