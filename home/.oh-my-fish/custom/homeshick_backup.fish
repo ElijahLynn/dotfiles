@@ -39,8 +39,8 @@ if not diff --recursive $HOME/.config/fish/functions $HOME/.homesick/repos/dotfi
     homeshick track dotfiles *
     cd -
     git add --all
+    git commit --message "Update functions"
     set push_needed yes
-    echo $push_needed
 end
 
 # Push & Notify.
