@@ -9,6 +9,7 @@ abbr dc 'drush cache-clear all'
 abbr d drush
 abbr ds 'drush status'
 abbr fb firebase
+abbr foo stuff
 abbr fp file_path
 abbr gau 'git add --update'
 abbr gdc 'git diff --cached'
