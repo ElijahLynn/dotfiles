@@ -23,16 +23,6 @@ if not git diff --exit-code fish_abbreviation_backup
     set push_needed yes
 end
 
-# Commit any dotfiles changes.
-if not git diff --exit-code; or
-   not git diff --cached --exit-code; or
-
-       # Update dotfiles.
-       git add --all
-       git commit --message "Update dotfiles"
-       set push_needed yes
-end
-
 # Homeshick track any new functions
 if not diff --recursive $HOME/.config/fish/functions $HOME/.homesick/repos/dotfiles/home/.config/fish/functions
     cd $HOME/.config/fish/functions
@@ -41,6 +31,16 @@ if not diff --recursive $HOME/.config/fish/functions $HOME/.homesick/repos/dotfi
     git add --all
     git commit --message "Update functions"
     set push_needed yes
+end
+
+# Commit any dotfiles changes.
+if not git diff --exit-code; or
+   not git diff --cached --exit-code; or
+
+       # Update dotfiles.
+       git add --all
+       git commit --message "Update dotfiles"
+       set push_needed yes
 end
 
 # Push & Notify.
