@@ -33,7 +33,7 @@ if not git diff --exit-code; or
 end
 
 # Homeshick track any new functions
-if diff --recursive $HOME/.config/fish/functions $HOME/.homesick/repos/dotfiles/home/.config/fish/functions
+if not diff --recursive $HOME/.config/fish/functions $HOME/.homesick/repos/dotfiles/home/.config/fish/functions
     cd $HOME/.config/fish/functions
     homeshick track dotfiles *
     cd -
