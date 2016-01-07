@@ -33,9 +33,13 @@ if not git diff --exit-code; or
 end
 
 # Homeshick track any new functions
-cd $HOME/.config/fish/functions
-homeshick track dotfiles *
-cd -
+if diff --recursive $HOME/.config/fish/functions $HOME/.homesick/repos/dotfiles/home/.config/fish/functions
+    cd $HOME/.config/fish/functions
+    homeshick track dotfiles *
+    cd -
+    git add --all
+    set push_needed yes
+end
 
 # Push & Notify.
 if test $push_needed = yes
