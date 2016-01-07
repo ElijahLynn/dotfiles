@@ -12,3 +12,5 @@ set scrolloff=200
 " Show line numbers
 set number
 
+" http://stackoverflow.com/a/1878983/292408  
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
