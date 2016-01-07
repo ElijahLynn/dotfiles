@@ -32,6 +32,11 @@ if not git diff --exit-code; or
        set push_needed yes
 end
 
+# Homeshick track any new functions
+cd $HOME/.config/fish/functions
+homeshick track dotfiles *
+cd -
+
 # Push & Notify.
 if test $push_needed = yes
     git push
