@@ -29,4 +29,5 @@ abbr st speedtest
 abbr sys 'tail -f -n 500 /var/log/syslog'
 abbr toff 'tscreen off'
 abbr ton 'tscreen on'
+abbr tree 'tree -a'
 abbr ytd 'youtube-dl -t'
