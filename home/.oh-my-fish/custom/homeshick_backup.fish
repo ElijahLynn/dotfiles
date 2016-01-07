@@ -40,6 +40,7 @@ if not diff --recursive $HOME/.config/fish/functions $HOME/.homesick/repos/dotfi
     cd -
     git add --all
     set push_needed yes
+    echo $push_needed
 end
 
 # Push & Notify.
