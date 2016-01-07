@@ -4,6 +4,7 @@
 # @see http://www.webupd8.org/2014/04/configurable-notification-bubbles-for.html
 # @todo Make commit messages a bit more detailed about what files changed.
 
+set push_needed no
 cd $HOME/.homesick/repos/dotfiles
 
 # keychain support, so crontab doesn't ask for a key passphrase every git push.
