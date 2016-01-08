@@ -3,6 +3,15 @@
 # Needs patched NotifyOSD for notify-send --expire-time to work.
 # @see http://www.webupd8.org/2014/04/configurable-notification-bubbles-for.html
 # @todo Make commit messages a bit more detailed about what files changed.
+#
+#
+
+# Crontab setup
+# Needed to use notify-send                                                         
+# @see http://unix.stackexchange.com/a/111189/27902                                 
+# DISPLAY=:0.0                                                                        
+#                                                                                   
+# * * * * * /home/elijah/.oh-my-fish/custom/homeshick_backup.fish > /dev/null 2>&1    
 
 set push_needed no
 cd $HOME/.homesick/repos/dotfiles
