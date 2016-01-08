@@ -16,7 +16,7 @@
 #   * z -l foo  # list all dirs matching foo (by frecency)
 
 
-function z -d "Jump to a recent directory."
+function z -d "Jump to a recent directory.Test"
 
     set -l __Z_DATA "$HOME/.z"
     touch $__Z_DATA
