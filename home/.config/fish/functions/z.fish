@@ -170,7 +170,7 @@ function z -d "Jump to a recent directory."
 
 
 
-            rm -f $tempfile
+            command rm -f $tempfile
             [ ! $target ]; or cd $target
 
         end
