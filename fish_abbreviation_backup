@@ -21,7 +21,6 @@ abbr g git
 abbr gs 'git status'
 abbr hs homeshick
 abbr hst 'homeshick track dotfiles'
-abbr l ll
 abbr ll 'ls --all --human-readable -l'
 abbr logout 'gnome-session-quit'
 abbr lt 'lt --port 80 --subdomain elijah'
