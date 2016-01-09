@@ -12,7 +12,7 @@
 # DISPLAY=:0.0                                                                        
 #                                                                                   
 # * * * * * /home/elijah/.oh-my-fish/custom/homeshick_backup.fish > /dev/null 2>&1    
-
+set push_needed 0 
 cd $HOME/.homesick/repos/dotfiles
 
 # keychain support, so crontab doesn't ask for a key passphrase every git push.
@@ -28,7 +28,7 @@ if not git diff --exit-code fish_abbreviation_backup
 
     git add fish_abbreviation_backup
     git commit --message "Update Fish abbreviations"
-    set push_needed yes
+    set push_needed 1
 end
 
 # Homeshick track any new functions
@@ -38,7 +38,7 @@ if not diff --recursive $HOME/.config/fish/functions $HOME/.homesick/repos/dotfi
     cd -
     git add --all
     git commit --message "Update functions"
-    set push_needed yes
+    set push_needed 1
 end
 
 # Commit any dotfiles changes.
@@ -48,11 +48,11 @@ if not git diff --exit-code; or
        # Update dotfiles.
        git add --all
        git commit --message "Update dotfiles"
-       set push_needed yes
+       set push_needed 1 
 end
 
 # Push & Notify.
-if test $push_needed = yes
+if [ $push_needed -eq 1 ]
     git push
     if test (git rev-parse --verify master) = (git rev-parse --verify origin/master)
         notify-send --expire-time=3000 "Dotfiles updated and pushed to Github"
