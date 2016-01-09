@@ -28,7 +28,7 @@ if not git diff --exit-code fish_abbreviation_backup
 
     git add fish_abbreviation_backup
     git commit --message "Update Fish abbreviations"
-    set push_needed 1
+    set push_needed 
 end
 
 # Homeshick track any new functions
@@ -38,7 +38,7 @@ if not diff --recursive $HOME/.config/fish/functions $HOME/.homesick/repos/dotfi
     cd -
     git add --all
     git commit --message "Update functions"
-    set push_needed 1
+    set push_needed 
 end
 
 # Commit any dotfiles changes.
@@ -48,7 +48,7 @@ if not git diff --exit-code; or
        # Update dotfiles.
        git add --all
        git commit --message "Update dotfiles"
-       set push_needed 1 
+       set push_needed  
 end
 
 # Push & Notify.
