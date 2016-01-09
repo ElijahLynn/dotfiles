@@ -13,7 +13,6 @@
 #                                                                                   
 # * * * * * /home/elijah/.oh-my-fish/custom/homeshick_backup.fish > /dev/null 2>&1    
 
-set push_needed no
 cd $HOME/.homesick/repos/dotfiles
 
 # keychain support, so crontab doesn't ask for a key passphrase every git push.
