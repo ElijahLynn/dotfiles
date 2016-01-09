@@ -28,7 +28,6 @@ abbr melt 'melt -filter dynamictext bgcolour="#50FFFFFF" size=10 -progress'
 abbr se sudoedit
 abbr st speedtest
 abbr sys 'tail -f -n 500 /var/log/syslog'
-abbr test foo
 abbr toff 'tscreen off'
 abbr ton 'tscreen on'
 abbr tree 'tree -a'
