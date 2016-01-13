@@ -18,6 +18,7 @@ abbr gfa 'git fetch --all'
 abbr gfo 'git fetch origin'
 abbr gg 'git tree'
 abbr g git
+abbr gl 'git lg'
 abbr gs 'git status'
 abbr hs homeshick
 abbr hst 'homeshick track dotfiles'
