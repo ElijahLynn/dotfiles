@@ -1,6 +1,7 @@
 " Vim Runtime Commands file
 
 " Fish support
+" https://github.com/dag/vim-fish
 if &shell =~# 'fish$'
         set shell=sh
 endif
