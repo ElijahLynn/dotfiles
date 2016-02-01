@@ -7,6 +7,5 @@ function tscreen
         case 'off'
             xinput disable $ID
             echo 'Touchscreen disabled'
-            echo 'yes'
     end
 end
