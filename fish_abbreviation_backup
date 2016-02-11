@@ -11,6 +11,7 @@ abbr drush8 /home/elijah/bin/drush/drush
 abbr ds 'drush status'
 abbr fb firebase
 abbr fp file_path
+abbr gap 'git add --patch'
 abbr gau 'git add --update'
 abbr gdc 'git diff --cached'
 abbr gd 'git diff'
