@@ -21,6 +21,7 @@ abbr gfo 'git fetch origin'
 abbr gg 'git tree'
 abbr g git
 abbr gl 'git lg'
+abbr gri 'git rebase --interactive'
 abbr gs 'git status'
 abbr hs homeshick
 abbr hst 'homeshick track dotfiles'
