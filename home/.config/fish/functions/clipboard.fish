@@ -1,3 +1,3 @@
 function clipboard
-	xsel -i --clipboard $argv
+	xsel --input --clipboard $argv
 end
