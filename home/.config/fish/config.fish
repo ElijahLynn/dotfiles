@@ -27,3 +27,5 @@ end
 #tmux_pane_title
 
 set -g -x PATH /home/elijah/Android/Sdk/platform-tools/ $PATH
+
+bind \cs 'prepend_command sudo'
