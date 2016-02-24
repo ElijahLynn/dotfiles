@@ -32,5 +32,5 @@ set -g -x PATH /home/elijah/Android/Sdk/platform-tools/ $PATH
 bind \cs 'prepend_command sudo'
 bind \cq 'prepend_command sudo'
 
-fish_vi_mode
+#fish_vi_mode
 
