@@ -33,3 +33,4 @@ bind \cs 'prepend_command sudo'
 bind \cq 'prepend_command sudo'
 
 fish_vi_mode
+
