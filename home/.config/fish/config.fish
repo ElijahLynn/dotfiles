@@ -28,4 +28,7 @@ end
 
 set -g -x PATH /home/elijah/Android/Sdk/platform-tools/ $PATH
 
+# Works with the prepend_command for !!.
 bind \cs 'prepend_command sudo'
+
+fish_vi_mode
