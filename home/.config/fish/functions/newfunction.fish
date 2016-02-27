@@ -1,3 +1,3 @@
 function newfunction
-	echo foo
+	echo foo1
 end
