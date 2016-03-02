@@ -1,4 +1,4 @@
 function clipboard
-    #xsel --input --clipboard $argv
-    xclip -selection clipboard
+	xsel --input --clipboard
+    #    xclip -selection -in clipboard
 end
