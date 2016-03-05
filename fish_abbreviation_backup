@@ -5,7 +5,7 @@ abbr cb clipboard
 abbr c cat
 abbr cdgr 'cd (git root)'
 abbr dcd 'drush cache-clear drush'
-abbr dc 'drush cache-clear all;drush cache-rebuild'
+abbr dc 'drush cache-clear'
 abbr d drush
 abbr drush8 /home/elijah/bin/drush/drush
 abbr ds 'drush status'
