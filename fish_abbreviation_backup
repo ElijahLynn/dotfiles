@@ -23,6 +23,7 @@ abbr g git
 abbr gl 'git lg'
 abbr gri 'git rebase --interactive'
 abbr gs 'git status'
+abbr gsp 'git stash pop'
 abbr h history
 abbr hm 'history --merge'
 abbr hs homeshick
