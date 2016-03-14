@@ -4,6 +4,7 @@ abbr b bower
 abbr cb clipboard
 abbr c cat
 abbr cdgr 'cd (git root)'
+abbr dca 'drush cache-clear all'
 abbr dcd 'drush cache-clear drush'
 abbr dc 'drush cache-clear'
 abbr d drush
