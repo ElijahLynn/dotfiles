@@ -41,4 +41,5 @@ abbr toff 'tscreen off'
 abbr ton 'tscreen on'
 abbr tree 'tree -a'
 abbr vr 'sudo service varnish restart'
+abbr x xdebug
 abbr ytd 'youtube-dl -t'
