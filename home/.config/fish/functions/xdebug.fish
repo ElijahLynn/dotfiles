@@ -1,7 +1,7 @@
 function xdebug
 	switch $argv[1]
 	case 'on'
-            set --export --universal XDEBUG_CONFIG 'idekey=phpstorm'
+            set --export XDEBUG_CONFIG 'idekey=phpstorm'
             echo Xdebug activated
 	case 'off'
             set --erase XDEBUG_CONFIG
