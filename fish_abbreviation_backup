@@ -9,6 +9,7 @@ abbr dca 'drush cache-clear all'
 abbr dcd 'drush cache-clear drush'
 abbr dc 'drush cache-clear'
 abbr d drush
+abbr dm /home/elijah/docker-machine
 abbr drush8 /home/elijah/bin/drush/drush
 abbr ds 'drush status'
 abbr eh 'sudo vi /etc/hosts'
