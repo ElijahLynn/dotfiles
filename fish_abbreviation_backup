@@ -18,6 +18,7 @@ abbr fp file_path
 abbr gaa 'git add --all'
 abbr gap 'git add --patch'
 abbr gau 'git add --update'
+abbr gc 'git commit'
 abbr gdc 'git diff --cached'
 abbr gd 'git diff'
 abbr gdh 'git diff HEAD^'
