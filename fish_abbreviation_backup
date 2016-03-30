@@ -15,6 +15,7 @@ abbr ds 'drush status'
 abbr eh 'sudo vi /etc/hosts'
 abbr fb firebase
 abbr fp file_path
+abbr gaa 'git add --all'
 abbr gap 'git add --patch'
 abbr gau 'git add --update'
 abbr gdc 'git diff --cached'
