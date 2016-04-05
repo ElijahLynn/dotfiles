@@ -1,4 +1,4 @@
 function tok
-	stoken | clipboard
+	stoken | tr --delete '\n' | clipboard
 echo 'token copied to clipboard'
 end
