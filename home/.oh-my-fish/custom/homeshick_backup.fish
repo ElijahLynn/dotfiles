@@ -18,7 +18,6 @@ cd $HOME/.homesick/repos/dotfiles
 # keychain support, so crontab doesn't ask for a key passphrase every git push.
 # @see http://superuser.com/a/933903/30982
 source $HOME/.keychain/(hostname)-fish
-notify-send '40'
 notify-send (date)
 
 
