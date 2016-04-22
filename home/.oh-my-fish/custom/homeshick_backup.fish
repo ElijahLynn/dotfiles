@@ -22,7 +22,7 @@ source $HOME/.keychain/(hostname)-fish
 # Export Fish abbreviations and commit them.
 abbr --show | sort > fish_abbreviation_backup;
 # @todo Figure out whey this has to be inverted. Doesn't make sense.
-if not git diff --exit-code fish_abbreviation_backup
+if git diff --exit-code fish_abbreviation_backup
     # fish doesn't sort abbr --show yet so lets source it in as such.
     # @see https://github.com/fish-shell/fish-shell/issues/2156
     source fish_abbreviation_backup
