@@ -20,7 +20,7 @@ set fish_theme agnoster
 # keychain support
 # @see http://superuser.com/a/933903/30982
 if not status --is-interactive
-  keychain --eval --quiet --quick $HOME/.ssh/id_rsa
+  keychain --eval --quiet --quick $HOME/.ssh/id_rsa | source
 end
 
 # Custom function to load so tmux will change the title of panes.
