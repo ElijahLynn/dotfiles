@@ -35,7 +35,7 @@ if git diff --exit-code fish_abbreviation_backup
 end
 
 # Homeshick track any new functions
-if not diff --recursive $HOME/.config/fish/functions $HOME/.homesick/repos/dotfiles/home/.config/fish/functions
+if diff --recursive $HOME/.config/fish/functions $HOME/.homesick/repos/dotfiles/home/.config/fish/functions
     cd $HOME/.config/fish/functions
     homeshick track dotfiles *
     cd -
