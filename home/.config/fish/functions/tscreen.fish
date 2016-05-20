@@ -1,11 +1,13 @@
 function tscreen
-	set ID (xinput list | grep Wacom | awk -F= '{ print $2 }' | cut -c1-2)
-    switch $argv[1]
+	set --local NAME 'Wacom ISDv4 E2 Finger touch'
+    set --local ENABLED (xsetwacom --get $NAME touch)
+    switch $ENABLED
         case 'on'
-            xinput enable $ID
-            echo 'Touchscreen enabled'
+            xsetwacom --set $NAME touch off
+            notify-send --expire-time=1000 'Touchscreen disabled'
+
         case 'off'
-            xinput disable $ID
-            echo 'Touchscreen disabled'
+            xsetwacom --set $NAME touch on
+            notify-send --expire-time=1000 'Touchscreen enabled'
     end
 end
