@@ -37,3 +37,5 @@
 	excludesfile = /home/elijah/.gitignore
 [push]
 	default = current
+[grep]
+	lineNumber = true
