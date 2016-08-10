@@ -4,10 +4,10 @@ function tscreen
     switch $ENABLED
         case 'on'
             xsetwacom --set $NAME touch off
-            notify-send --expire-time=1000 'Touchscreen disabled'
+            notify-send --urgency=critical --expire-time=1500 'Touchscreen disabled'
 
         case 'off'
             xsetwacom --set $NAME touch on
-            notify-send --expire-time=1000 'Touchscreen enabled'
+            notify-send --urgency=critical --expire-time=1500 'Touchscreen enabled'
     end
 end
