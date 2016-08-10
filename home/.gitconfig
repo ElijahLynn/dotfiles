@@ -20,13 +20,14 @@
 	lg = log --oneline
 	merges = log --merges --oneline --pretty=format:%Cblue%cD%Cred☃' '%Cgreen%s --since='2 days' 
 	pr = pull-request
-	st = status -s
 	track = "!f() { ([ $# -eq 2 ] && ( echo \"Setting tracking for branch \" $1 \" -> \" $2;git branch --set-upstream $1 $2; ) || ( git for-each-ref --format=\"local: %(refname:short) <--sync--> remote: %(upstream:short)\" refs/heads && echo --Remotes && git remote -v)); }; f"
 	tree = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative --all
 	lcm = log --pretty=format:%s -1
 	la = !git config -l | grep alias | cut -c 7-
 	alias = config --get-regexp ^alias\\.
 	root = !pwd
+	st = status --short
+	g = grep --break --heading --line-number
 [log]
 	abbrevcommit = true
 [diff]
