@@ -1,0 +1,1 @@
+/home/elijah/.homesick/repos/dotfiles/home/.config/fish/functions/a.fish
