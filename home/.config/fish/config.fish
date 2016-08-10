@@ -28,5 +28,5 @@ end
 
 set -g -x PATH /home/elijah/Android/Sdk/platform-tools/ $PATH
 
-fish_vi_mode
+fish_vi_key_bindings
 
