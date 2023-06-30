@@ -18,6 +18,7 @@ function fish_prompt
     echo ""
     echo "----------------------------------------------"
     set -g __fish_git_prompt_show_informative_status yes
+    set -g __fish_git_prompt_showuntrackedfiles yes
     echo -n (just_the_time)
     echo -e (set_color $fish_color_cwd) (prompt_pwd)(set_color brown)(fish_git_prompt)
     # set --erase --global branch
