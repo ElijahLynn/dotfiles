@@ -1,0 +1,13 @@
+{
+  "editor.accessibilitySupport": "off",
+  "editor.inlineSuggest.enabled": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 100,
+  "redhat.telemetry.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.colorTheme": "Kimbie Dark",
+  "workbench.sideBar.location": "right",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  }
+}
