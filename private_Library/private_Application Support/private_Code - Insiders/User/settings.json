@@ -5,6 +5,8 @@
   "files.autoSaveDelay": 100,
   "redhat.telemetry.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
+  "snyk.advanced.cliPath": "/Users/user/Library/Application Support/snyk-ls/snyk-macos",
+  "snyk.yesWelcomeNotification": false,
   "workbench.colorTheme": "Kimbie Dark",
   "workbench.sideBar.location": "right",
   "terminal.integrated.env.osx": {
