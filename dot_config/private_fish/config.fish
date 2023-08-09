@@ -15,15 +15,15 @@ function just_the_time --description 'Shows just the time in 24-hour format'
 end
 
 function fish_prompt
-    echo ""
+    set --local return_code $status
+    echo "  "
     echo ----------------------------------------------
     echo -n (just_the_time)
-    echo " RC: $status"
+    echo " RC: $return_code"
     echo ----------------------------------------------
  
-    set -g __fish_git_prompt_show_informative_status yes
-    set -g __fish_git_prompt_showuntrackedfiles yes
+    set --global __fish_git_prompt_show_informative_status yes
+    set --global __fish_git_prompt_showuntrackedfiles yes
     echo -e (set_color $fish_color_cwd) (prompt_pwd)(set_color brown)(fish_git_prompt)
-    # set --erase --global branch
     echo (iterm2_prompt_mark) ""
 end
