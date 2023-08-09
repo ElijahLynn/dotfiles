@@ -7,9 +7,19 @@
   "security.workspace.trust.untrustedFiles": "open",
   "snyk.advanced.cliPath": "/Users/user/Library/Application Support/snyk-ls/snyk-macos",
   "snyk.yesWelcomeNotification": false,
-  "workbench.colorTheme": "Kimbie Dark",
   "workbench.sideBar.location": "right",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
-  }
+  },
+  "window.autoDetectColorScheme": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "yaml": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.rulers": [120]
 }
