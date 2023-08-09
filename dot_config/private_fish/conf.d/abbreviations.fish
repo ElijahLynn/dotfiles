@@ -1,7 +1,7 @@
 abbr -a -- cdgr 'cd (git root)'
 abbr -a -- ch 'chezmoi'
 abbr -a -- code 'code-insiders'
-abbr -a -- dns-update 'curl http://sync.afraid.org/u/SDK9tmQWwc9Mt4kXzo36SqGP/ | tee /tmp/freedns_el-sl_privatedns_org.log'
+abbr -a -- du 'curl http://sync.afraid.org/u/SDK9tmQWwc9Mt4kXzo36SqGP/ | tee /tmp/freedns_el-sl_privatedns_org.log'
 abbr -a -- g 'git'
 abbr -a -- ga 'git add'
 abbr -a -- gaa 'git add --all'
