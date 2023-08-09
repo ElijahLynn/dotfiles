@@ -1,3 +1,4 @@
+abbr -a -- amend 'git commit --amend'
 abbr -a -- cdgr 'cd (git root)'
 abbr -a -- ch 'chezmoi'
 abbr -a -- code 'code-insiders'
