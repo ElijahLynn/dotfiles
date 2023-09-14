@@ -21,5 +21,10 @@
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "editor.rulers": [120]
+  "editor.rulers": [
+    120
+  ],
+  "diffEditor.renderSideBySide": false,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false
 }
