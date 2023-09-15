@@ -1,5 +1,5 @@
 abbr -a -- amend 'git commit --amend --no-edit'
-abbr -a -- cdgr 'cd (git root)'
+abbr -a -- cdgr 'cd (git rev-parse --show-toplevel)'
 abbr -a -- ch 'chezmoi'
 abbr -a -- code 'code-insiders'
 abbr -a -- dns 'curl http://sync.afraid.org/u/SDK9tmQWwc9Mt4kXzo36SqGP/ | tee /tmp/freedns_el-sl_privatedns_org.log'
