@@ -26,5 +26,6 @@
   ],
   "diffEditor.renderSideBySide": false,
   "editor.formatOnSave": true,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "debug.javascript.autoAttachFilter": "smart"
 }
