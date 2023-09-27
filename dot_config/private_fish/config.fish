@@ -6,7 +6,7 @@ source ~/.iterm2_shell_integration.fish
 
 ## asdf support
 ## https://asdf-vm.com/guide/getting-started.html
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
+#source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 ## grep
 ## https://stackoverflow.com/a/77054092/292408
