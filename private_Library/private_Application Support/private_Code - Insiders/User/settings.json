@@ -27,5 +27,6 @@
   "diffEditor.renderSideBySide": false,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
-  "debug.javascript.autoAttachFilter": "smart"
+  "debug.javascript.autoAttachFilter": "smart",
+  "githubPullRequests.pullBranch": "never"
 }
