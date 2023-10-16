@@ -16,4 +16,3 @@
 	co = commit
 	root = rev-parse --show-toplevel
 	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative --all
-	reset = !git restore --staged $1 && git restore $1
