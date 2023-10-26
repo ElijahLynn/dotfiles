@@ -1,10 +1,4 @@
-    "*": true,
-    "FIG_NEW_SESSION": "1"
-    "markdown": true,
-    "plaintext": false,
-    "scminput": false,
-    "yaml": true
-    120
+{
   "debug.javascript.autoAttachFilter": "smart",
   "diffEditor.renderSideBySide": false,
   "editor.accessibilitySupport": "off",
@@ -12,11 +6,19 @@
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
   "editor.rulers": [
+    120
+  ],
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 100,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": false,
+    "scminput": false,
+    "yaml": true
+  },
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never",
   "redhat.telemetry.enabled": true,
@@ -24,13 +26,11 @@
   "snyk.advanced.cliPath": "/Users/user/Library/Application Support/snyk-ls/snyk-macos",
   "snyk.yesWelcomeNotification": false,
   "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
   "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "zenMode.hideLineNumbers": false
-  ],
-  },
-  },
-{
 }
