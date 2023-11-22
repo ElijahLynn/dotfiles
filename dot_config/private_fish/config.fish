@@ -36,3 +36,6 @@ function fish_prompt
     echo -e (set_color $fish_color_cwd) (prompt_pwd)(set_color brown)(fish_git_prompt)
     echo (iterm2_prompt_mark) ""
 end
+
+# Created by `pipx` on 2023-11-09 23:11:55
+set PATH $PATH /Users/user/.local/bin
