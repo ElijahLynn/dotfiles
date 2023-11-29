@@ -35,6 +35,5 @@
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "zenMode.hideLineNumbers": false,
-  "gitlens.outputLevel": "error",
   "workbench.colorTheme": "Dainty – One Dark Pro (chroma 1, lightness 0)"
 }
