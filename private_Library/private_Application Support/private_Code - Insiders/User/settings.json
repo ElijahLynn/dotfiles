@@ -1,4 +1,5 @@
 {
+  "ansible.python.interpreterPath": "/opt/homebrew/bin/python3",
   "debug.javascript.autoAttachFilter": "smart",
   "diffEditor.renderSideBySide": false,
   "editor.accessibilitySupport": "off",
@@ -8,14 +9,17 @@
   "editor.rulers": [
     120
   ],
+  "files.associations": {
+    "*.yml": "ansible"
+  },
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 100,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "github.copilot.enable": {
     "*": true,
-    "markdown": true,
     "plaintext": false,
+    "markdown": true,
     "scminput": false,
     "yaml": true
   },
@@ -23,8 +27,6 @@
   "githubPullRequests.pullBranch": "never",
   "redhat.telemetry.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "snyk.advanced.cliPath": "/Users/user/Library/Application Support/snyk-ls/snyk-macos",
-  "snyk.yesWelcomeNotification": false,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
@@ -32,5 +34,7 @@
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
-  "zenMode.hideLineNumbers": false
+  "zenMode.hideLineNumbers": false,
+  "gitlens.outputLevel": "error",
+  "workbench.colorTheme": "Dainty – One Dark Pro (chroma 1, lightness 0)"
 }
