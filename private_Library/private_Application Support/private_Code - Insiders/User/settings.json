@@ -7,7 +7,7 @@
   "editor.inlineSuggest.enabled": true,
   "editor.minimap.enabled": false,
   "editor.rulers": [
-    120
+    160
   ],
   "files.associations": {
     "**/ansible/**/*.yml": "ansible",
@@ -32,7 +32,6 @@
   },
   "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
-  "workbench.colorTheme": "Dainty – One Dark Pro (chroma 1, lightness 0)",
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "zenMode.hideLineNumbers": false,
