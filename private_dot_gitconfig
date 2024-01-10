@@ -16,3 +16,5 @@
 	co = commit
 	root = rev-parse --show-toplevel
 	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative --all
+[core]
+	whitespace = trailing-space
