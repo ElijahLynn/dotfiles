@@ -35,4 +35,7 @@
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "zenMode.hideLineNumbers": false,
+  "explorer.confirmDragAndDrop": false,
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.editor.enablePreview": false,
 }
