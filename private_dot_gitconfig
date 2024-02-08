@@ -18,3 +18,5 @@
 	graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative --all
 [diff]
 	wsErrorHighlight = new,old
+[core]
+	excludesfile = /Users/user/.gitignore
