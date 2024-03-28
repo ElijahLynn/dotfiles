@@ -12,6 +12,11 @@ source /opt/homebrew/opt/asdf/libexec/asdf.fish
 ## https://github.com/sdkman/sdkman-cli/issues/671#issuecomment-1765078814
 fish_add_path (find ~/.sdkman/candidates/*/current/bin -maxdepth 0)
 
+# FZF https://github.com/PatrickF1/fzf.fish
+# https://github.com/warpdotdev/Warp/issues/4647#issuecomment-2023326005
+if test "$TERM_PROGRAM" != "WarpTerminal"
+  fzf --fish | source
+end
 
 ## grep
 ## https://stackoverflow.com/a/77054092/292408
