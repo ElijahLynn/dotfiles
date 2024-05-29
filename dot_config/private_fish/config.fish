@@ -13,12 +13,6 @@ source /opt/homebrew/opt/asdf/libexec/asdf.fish
 ## https://github.com/sdkman/sdkman-cli/issues/671#issuecomment-1765078814
 fish_add_path (find ~/.sdkman/candidates/*/current/bin -maxdepth 0)
 
-# FZF https://github.com/PatrickF1/fzf.fish
-# https://github.com/warpdotdev/Warp/issues/4647#issuecomment-2023326005
-if test "$TERM_PROGRAM" != WarpTerminal
-    fzf --fish | source
-end
-
 ## grep
 ## https://stackoverflow.com/a/77054092/292408
 set --global --export PATH $HOMEBREW_PREFIX/opt/grep/libexec/gnubin $PATH
@@ -47,3 +41,4 @@ set --global fish_greeting ""
 
 # Created by `pipx` on 2023-11-09 23:11:55
 set PATH $PATH /Users/user/.local/bin
+source ~/.config/fish/completions/kubectl.fish
