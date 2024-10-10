@@ -15,5 +15,10 @@
     {
         "key": "cmd+i",
         "command": "-continue.quickEdit"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "-aipopup.action.modal.generate",
+        "when": "editorFocus && !composerBarIsVisible && !composerControlPanelIsVisible"
     }
 ]
