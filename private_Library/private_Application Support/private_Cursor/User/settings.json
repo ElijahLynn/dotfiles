@@ -23,7 +23,7 @@
   },
   "window.autoDetectColorScheme": true,
   "window.commandCenter": true,
-  "workbench.layoutControl.enabled": false,
+  "workbench.layoutControl.enabled": true,
   "workbench.sideBar.location": "right",
   "zenMode.hideLineNumbers": false,
   "explorer.confirmDragAndDrop": false,
