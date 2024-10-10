@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+alt+cmd+l",
+        "command": "continue.focusContinueInput"
+    },
+    {
+        "key": "cmd+l",
+        "command": "-continue.focusContinueInput"
+    },
+    {
+        "key": "ctrl+alt+cmd+i",
+        "command": "continue.quickEdit"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-continue.quickEdit"
+    }
+]
