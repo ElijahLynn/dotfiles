@@ -9,24 +9,24 @@
   "editor.rulers": [
     160
   ],
+  "explorer.confirmDragAndDrop": false,
   "files.associations": {
-    "**/ansible/**/*.yml": "ansible",
+    "**/ansible/**/*.yml": "ansible"
   },
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 100,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "redhat.telemetry.enabled": true,
+  "security.promptForLocalFileProtocolHandling": false,
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
   "window.autoDetectColorScheme": true,
   "window.commandCenter": true,
+  "workbench.editor.enablePreview": false,
   "workbench.layoutControl.enabled": true,
   "workbench.sideBar.location": "right",
-  "zenMode.hideLineNumbers": false,
-  "explorer.confirmDragAndDrop": false,
-  "workbench.editor.enablePreview": false,
-  "security.promptForLocalFileProtocolHandling": false,
+  "zenMode.hideLineNumbers": false
 }
