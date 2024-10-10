@@ -16,13 +16,6 @@
     "files.autoSaveDelay": 100,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "github.copilot.enable": {
-      "*": true,
-      "plaintext": false,
-      "markdown": true,
-      "scminput": false,
-      "yaml": true
-    },
     "githubPullRequests.fileListLayout": "tree",
     "githubPullRequests.pullBranch": "never",
     "redhat.telemetry.enabled": true,
@@ -38,10 +31,5 @@
     "explorer.confirmDragAndDrop": false,
     "go.toolsManagement.autoUpdate": true,
     "workbench.editor.enablePreview": false,
-    "github.copilot.editor.enableAutoCompletions": true,
     "security.promptForLocalFileProtocolHandling": false,
-    "gitlens.graph.minimap.dataType": "lines",
-    "gitlens.graph.minimap.enabled": false,
-    "gitlens.ai.experimental.model": "openai:gpt-4o",
-    "gitlens.views.commitDetails.files.layout": "tree",
   }
