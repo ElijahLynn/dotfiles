@@ -1,0 +1,47 @@
+{
+    "ansible.python.interpreterPath": "/opt/homebrew/bin/python3",
+    "debug.javascript.autoAttachFilter": "smart",
+    "diffEditor.renderSideBySide": false,
+    "editor.accessibilitySupport": "off",
+    "editor.formatOnSave": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+      160
+    ],
+    "files.associations": {
+      "**/ansible/**/*.yml": "ansible",
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 100,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": false,
+      "markdown": true,
+      "scminput": false,
+      "yaml": true
+    },
+    "githubPullRequests.fileListLayout": "tree",
+    "githubPullRequests.pullBranch": "never",
+    "redhat.telemetry.enabled": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.env.osx": {
+      "FIG_NEW_SESSION": "1"
+    },
+    "window.autoDetectColorScheme": true,
+    "window.commandCenter": true,
+    "workbench.layoutControl.enabled": false,
+    "workbench.sideBar.location": "right",
+    "zenMode.hideLineNumbers": false,
+    "explorer.confirmDragAndDrop": false,
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.editor.enablePreview": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "security.promptForLocalFileProtocolHandling": false,
+    "gitlens.graph.minimap.dataType": "lines",
+    "gitlens.graph.minimap.enabled": false,
+    "gitlens.ai.experimental.model": "openai:gpt-4o",
+    "gitlens.views.commitDetails.files.layout": "tree",
+  }
