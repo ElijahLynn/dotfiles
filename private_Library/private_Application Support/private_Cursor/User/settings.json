@@ -29,6 +29,7 @@
   "workbench.layoutControl.enabled": true,
   "workbench.sideBar.location": "right",
   "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": true,
   "continue.enableTabAutocomplete": false,
   "extensions.ignoreRecommendations": true,
   "githubPullRequests.pullBranch": "never"
