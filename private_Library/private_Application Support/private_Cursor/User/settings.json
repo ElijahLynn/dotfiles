@@ -24,9 +24,12 @@
     "FIG_NEW_SESSION": "1"
   },
   "window.autoDetectColorScheme": true,
-  "window.commandCenter": true,
+  "window.commandCenter": false,
   "workbench.editor.enablePreview": false,
   "workbench.layoutControl.enabled": true,
   "workbench.sideBar.location": "right",
-  "zenMode.hideLineNumbers": false
+  "zenMode.hideLineNumbers": false,
+  "continue.enableTabAutocomplete": false,
+  "extensions.ignoreRecommendations": true,
+  "githubPullRequests.pullBranch": "never"
 }
