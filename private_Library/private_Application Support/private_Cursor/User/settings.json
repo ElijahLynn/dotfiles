@@ -32,5 +32,6 @@
   "zenMode.hideStatusBar": true,
   "continue.enableTabAutocomplete": false,
   "extensions.ignoreRecommendations": true,
-  "githubPullRequests.pullBranch": "never"
+  "githubPullRequests.pullBranch": "never",
+  "gitlens.currentLine.enabled": false
 }
