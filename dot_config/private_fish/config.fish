@@ -41,7 +41,7 @@ set --global fish_greeting ""
 
 ## Joseph Sinclair Gradle config
 ## https://github.com/jsync-swirlds/public-scripts/blob/main/.alias
-set -x GRADLE 'nice -n 20 gradle '
+set -x GRADLE 'nice -n 20 ./gradlew '
 set -x GRADLE_UT_OPTS ' -Dtestlogger.showPassed=false -Dtestlogger.showSkipped=false -Dtestlogger.showPassedStandardStreams=false -Dtestlogger.theme=mocha-parallel '
 set -x GRADLE_PARALLEL_OPTS '--parallel --max-workers=12'
 set -x GRADLE_CLEAN_OPTS '--no-daemon --no-build-cache --no-configuration-cache'
