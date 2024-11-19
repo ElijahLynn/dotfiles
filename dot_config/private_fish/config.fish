@@ -47,6 +47,22 @@ set -x GRADLE_PARALLEL_OPTS '--parallel --max-workers=12'
 set -x GRADLE_CLEAN_OPTS '--no-daemon --no-build-cache --no-configuration-cache'
 set -x GRADLE_COMPILE_OPTS "-Dsonar.gradle.skipCompile=true --warning-mode=summary $GRADLE_PARALLEL_OPTS $GRADLE_CLEAN_OPTS"
 set -x GRADLE_TEST_OPTS "--no-daemon $GRADLE_PARALLEL_OPTS $GRADLE_UT_OPTS"
+alias grdlProjects='${GRADLE} projects ${GRADLE_CLEAN_OPTS} '
+alias grdlClean='${GRADLE} clean --warning-mode=summary ${GRADLE_PARALLEL_OPTS} ${GRADLE_CLEAN_OPTS} '
+alias grdlTest='${GRADLE} assemble ${GRADLE_COMPILE_OPTS} && ${GRADLE} test ${GRADLE_TEST_OPTS} '
+alias grdlHapi='${GRADLE} hapiTest -Dsonar.gradle.skipCompile=true ${GRADLE_TEST_OPTS} ${GRADLE_CLEAN_OPTS} '
+alias grdlModules='${GRADLE} checkAllModuleInfo ${GRADLE_COMPILE_OPTS} '
+alias grdlCompile='${GRADLE} assemble ${GRADLE_COMPILE_OPTS} '
+alias grdlCleanCompile='${GRADLE} clean assemble ${GRADLE_COMPILE_OPTS} '
+alias grdlCleanTest='grdlCleanCompile && ${GRADLE} test ${GRADLE_TEST_OPTS} '
+alias grdlScanTest='grdlCleanCompile && ${GRADLE} test ${GRADLE_TEST_OPTS} ${GRADLE_CLEAN_OPTS} --scan '
+alias grdlFastTest='${GRADLE} test --warning-mode=summary ${GRADLE_TEST_OPTS} '
+alias grdlExtraCleanTest='grdlCleanCompile && grdlModules && ${GRADLE} test ${GRADLE_TEST_OPTS} ${GRADLE_CLEAN_OPTS} '
+alias grdlSpotless='grdlCompile && ${GRADLE} ${GRADLE_PARALLEL_OPTS} ${GRADLE_CLEAN_OPTS} checkAllModuleInfo spotlessCheck --warning-mode=summary -Dsonar.gradle.skipCompile=true '
+alias grdlReformat='${GRADLE} ${GRADLE_PARALLEL_OPTS} ${GRADLE_CLEAN_OPTS} spotlessApply --warning-mode=summary -Dsonar.gradle.skipCompile=true '
+alias finalPRChecks='grdlReformat && grdlExtraCleanTest && ${GRADLE} build --warning-mode=summary ${GRADLE_TEST_OPTS} && grdlHapi '
+alias pbjInt='${GRADLE} ${GRADLE_CLEAN_OPTS} clean :generatePbjSource :generateProto && ${GRADLE} ${GRADLE_CLEAN_OPTS} assemble test ${GRADLE_PARALLEL_OPTS} ${GRADLE_UT_OPTS} '
+alias pbjCore='${GRADLE} ${GRADLE_CLEAN_OPTS} clean assemble test ${GRADLE_PARALLEL_OPTS} ${GRADLE_UT_OPTS} publishToMavenLocal '
 
 
 # Created by `pipx` on 2023-11-09 23:11:55
