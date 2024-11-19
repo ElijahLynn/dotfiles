@@ -33,3 +33,23 @@ abbr -a -- ll 'ls -al'
 abbr -a -- sub 'ssh submit'
 abbr -a -- tf 'terraform'
 abbr -a -- ts 'tcp_states'
+
+## Joseph Sinclair Aliases
+## https://github.com/jsync-swirlds/public-scripts/blob/main/.alias
+abbr -a grdlProjects "$GRADLE projects $GRADLE_CLEAN_OPTS"
+abbr -a grdlClean "$GRADLE clean --warning-mode=summary $GRADLE_PARALLEL_OPTS $GRADLE_CLEAN_OPTS"
+abbr -a grdlTest "$GRADLE assemble $GRADLE_COMPILE_OPTS && $GRADLE test $GRADLE_TEST_OPTS"
+abbr -a grdlHapi "$GRADLE hapiTest -Dsonar.gradle.skipCompile=true $GRADLE_TEST_OPTS $GRADLE_CLEAN_OPTS"
+abbr -a grdlModules "$GRADLE checkAllModuleInfo $GRADLE_COMPILE_OPTS"
+abbr -a grdlCompile "$GRADLE assemble $GRADLE_COMPILE_OPTS"
+abbr -a grdlCleanCompile "$GRADLE clean assemble $GRADLE_COMPILE_OPTS"
+abbr -a grdlCleanTest "grdlCleanCompile && $GRADLE test $GRADLE_TEST_OPTS"
+abbr -a grdlScanTest "grdlCleanCompile && $GRADLE test $GRADLE_TEST_OPTS $GRADLE_CLEAN_OPTS --scan"
+abbr -a grdlFastTest "$GRADLE test --warning-mode=summary $GRADLE_TEST_OPTS"
+abbr -a grdlExtraCleanTest "grdlCleanCompile && grdlModules && $GRADLE test $GRADLE_TEST_OPTS $GRADLE_CLEAN_OPTS"
+abbr -a grdlSpotless "grdlCompile && $GRADLE $GRADLE_PARALLEL_OPTS $GRADLE_CLEAN_OPTS checkAllModuleInfo spotlessCheck --warning-mode=summary -Dsonar.gradle.skipCompile=true"
+abbr -a grdlReformat "$GRADLE $GRADLE_PARALLEL_OPTS $GRADLE_CLEAN_OPTS spotlessApply --warning-mode=summary -Dsonar.gradle.skipCompile=true"
+abbr -a finalPRChecks "grdlReformat && grdlExtraCleanTest && $GRADLE build --warning-mode=summary $GRADLE_TEST_OPTS && grdlHapi"
+abbr -a pbjInt "$GRADLE $GRADLE_CLEAN_OPTS clean :generatePbjSource :generateProto && $GRADLE $GRADLE_CLEAN_OPTS assemble test $GRADLE_PARALLEL_OPTS $GRADLE_UT_OPTS"
+abbr -a pbjCore "$GRADLE $GRADLE_CLEAN_OPTS clean assemble test $GRADLE_PARALLEL_OPTS $GRADLE_UT_OPTS publishToMavenLocal"
+
