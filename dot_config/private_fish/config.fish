@@ -67,3 +67,8 @@ alias pbjCore '$GRADLE $GRADLE_CLEAN_OPTS clean assemble test $GRADLE_PARALLEL_O
 # Created by `pipx` on 2023-11-09 23:11:55
 set PATH $PATH /Users/user/.local/bin
 source ~/.config/fish/completions/kubectl.fish
+
+# Add 
+# https://direnv.net/docs/hook.html
+direnv hook fish | source
+
