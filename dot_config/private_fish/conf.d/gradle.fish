@@ -1,7 +1,7 @@
 ## Joseph Sinclair Gradle config
 ## Adapted to fish from https://github.com/jsync-swirlds/public-scripts/blob/main/.alias
 
-# Define GRADLE as a function instead of a variable
+# Define gradle_cmd as a function instead of a variable (formerly a GRADLE variable in bash)
 function gradle_cmd
     if test -f "./gradlew"
         nice -n 20 ./gradlew $argv
