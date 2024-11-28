@@ -15,36 +15,11 @@ set --global --export PATH $HOMEBREW_PREFIX/opt/grep/libexec/gnubin $PATH
 
 set --global fish_greeting ""
 
-## Joseph Sinclair Gradle config
-## https://github.com/jsync-swirlds/public-scripts/blob/main/.alias
-set -x GRADLE 'nice -n 20 ./gradlew '
-set -x GRADLE_UT_OPTS ' -Dtestlogger.showPassed=false -Dtestlogger.showSkipped=false -Dtestlogger.showPassedStandardStreams=false -Dtestlogger.theme=mocha-parallel '
-set -x GRADLE_PARALLEL_OPTS '--parallel --max-workers=12'
-set -x GRADLE_CLEAN_OPTS '--no-daemon --no-build-cache --no-configuration-cache'
-set -x GRADLE_COMPILE_OPTS "-Dsonar.gradle.skipCompile=true --warning-mode=summary $GRADLE_PARALLEL_OPTS $GRADLE_CLEAN_OPTS"
-set -x GRADLE_TEST_OPTS "--no-daemon $GRADLE_PARALLEL_OPTS $GRADLE_UT_OPTS"
-alias grdlProjects '$GRADLE projects $GRADLE_CLEAN_OPTS'
-alias grdlClean '$GRADLE clean --warning-mode=summary $GRADLE_PARALLEL_OPTS $GRADLE_CLEAN_OPTS'
-alias grdlTest '$GRADLE assemble $GRADLE_COMPILE_OPTS; and $GRADLE test $GRADLE_TEST_OPTS'
-alias grdlHapi '$GRADLE hapiTest -Dsonar.gradle.skipCompile=true $GRADLE_TEST_OPTS $GRADLE_CLEAN_OPTS'
-alias grdlModules '$GRADLE checkAllModuleInfo $GRADLE_COMPILE_OPTS'
-alias grdlCompile '$GRADLE assemble $GRADLE_COMPILE_OPTS'
-alias grdlCleanCompile '$GRADLE clean assemble $GRADLE_COMPILE_OPTS'
-alias grdlCleanTest 'grdlCleanCompile; and $GRADLE test $GRADLE_TEST_OPTS'
-alias grdlScanTest 'grdlCleanCompile; and $GRADLE test $GRADLE_TEST_OPTS $GRADLE_CLEAN_OPTS --scan'
-alias grdlFastTest '$GRADLE test --warning-mode=summary $GRADLE_TEST_OPTS'
-alias grdlExtraCleanTest 'grdlCleanCompile; and grdlModules; and $GRADLE test $GRADLE_TEST_OPTS $GRADLE_CLEAN_OPTS'
-alias grdlSpotless 'grdlCompile; and $GRADLE $GRADLE_PARALLEL_OPTS $GRADLE_CLEAN_OPTS checkAllModuleInfo spotlessCheck --warning-mode=summary -Dsonar.gradle.skipCompile=true'
-alias grdlReformat '$GRADLE $GRADLE_PARALLEL_OPTS $GRADLE_CLEAN_OPTS spotlessApply --warning-mode=summary -Dsonar.gradle.skipCompile=true'
-alias finalPRChecks 'grdlReformat; and grdlExtraCleanTest; and $GRADLE build --warning-mode=summary $GRADLE_TEST_OPTS; and grdlHapi'
-alias pbjInt '$GRADLE $GRADLE_CLEAN_OPTS clean :generatePbjSource :generateProto; and $GRADLE $GRADLE_CLEAN_OPTS assemble test $GRADLE_PARALLEL_OPTS $GRADLE_UT_OPTS'
-alias pbjCore '$GRADLE $GRADLE_CLEAN_OPTS clean assemble test $GRADLE_PARALLEL_OPTS $GRADLE_UT_OPTS publishToMavenLocal'
-
 # Created by `pipx` on 2023-11-09 23:11:55
 set PATH $PATH /Users/user/.local/bin
 source ~/.config/fish/completions/kubectl.fish
 
-# Add 
+# Add
 # https://direnv.net/docs/hook.html
 direnv hook fish | source
 
