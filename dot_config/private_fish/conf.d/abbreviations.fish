@@ -1,4 +1,5 @@
 abbr -a -- amend 'git commit --amend --no-edit'
+abbr -a -- c 'cht.sh'
 abbr -a -- cdgr 'cd (git rev-parse --show-toplevel)'
 abbr -a -- ch 'chezmoi'
 abbr -a -- code 'code-insiders'
