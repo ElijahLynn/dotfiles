@@ -35,6 +35,7 @@ abbr -a -- ipu ip-update
 abbr -a -- khrl known_hosts_remove_line
 abbr -a -- ku kubectl
 abbr -a -- ll 'ls -al'
+abbr -a -- pr 'gh pr create --assignee @me --body-file .github/pull_request_template.md --editor'
 abbr -a -- s 'ssh'
 abbr -a -- sub 'ssh submit'
 abbr -a -- tf terraform
