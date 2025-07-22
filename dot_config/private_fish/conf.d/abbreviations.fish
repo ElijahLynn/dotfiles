@@ -1,4 +1,3 @@
-
 abbr -a -- amend 'git commit --amend --no-edit'
 abbr -a -- c 'cht.sh'
 abbr -a -- cdgr 'cd (git rev-parse --show-toplevel)'
@@ -34,9 +33,9 @@ abbr -a -- ip-local 'ipconfig getifaddr en0 | tee /dev/tty | pbcopy'
 abbr -a -- ipu ip-update
 abbr -a -- khrl known_hosts_remove_line
 abbr -a -- ku kubectl
-abbr -a -- ll 'ls -al'
+abbr -a -- ll 'ls -alh'
 abbr -a -- pr 'gh pr create --assignee @me --body-file .github/pull_request_template.md --editor'
-abbr -a -- s 'ssh'
+abbr -a -- s ssh
 abbr -a -- sub 'ssh submit'
 abbr -a -- tf terraform
 abbr -a -- ts tcp_states
