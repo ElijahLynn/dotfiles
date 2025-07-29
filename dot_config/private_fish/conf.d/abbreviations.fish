@@ -1,3 +1,4 @@
+abbr -a -- aba 'chezmoi apply ~/.config/fish/conf.d/abbreviations.fish'
 abbr -a -- abs 'source ~/.config/fish/abbreviations.fish'
 abbr -a -- abe 'chezmoi edit ~/.config/fish/conf.d/abbreviations.fish'
 abbr -a -- amend 'git commit --amend --no-edit'
