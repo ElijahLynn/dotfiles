@@ -34,9 +34,9 @@ abbr -a -- gst 'git stash'
 abbr -a -- hm 'history --merge'
 abbr -a -- ip-remote 'curl --silent ipinfo.io/ip | tee /dev/tty | pbcopy'
 abbr -a -- ip-local 'ipconfig getifaddr en0 | tee /dev/tty | pbcopy'
-abbr -a -- ipu ip-update
+abbr -a -- ipu ip-update # function
 abbr -a -- khrl known_hosts_remove_line
-abbr -a -- ku kubectl
+abbr -a -- kuc kubectl
 abbr -a -- ll 'ls -alh'
 abbr -a -- s ssh
 abbr -a -- sub 'ssh submit'
