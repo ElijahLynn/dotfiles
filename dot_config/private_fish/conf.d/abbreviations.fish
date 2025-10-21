@@ -39,7 +39,8 @@ abbr -a -- ip-remote 'curl --silent ipinfo.io/ip | tee /dev/tty | pbcopy'
 abbr -a -- ip-local 'ipconfig getifaddr en0 | tee /dev/tty | pbcopy'
 abbr -a -- ipu ip-update # function
 abbr -a -- khrl known_hosts_remove_line
-abbr -a -- kc kubectl
+abbr -a -- k 'kubectl'
+abbr -a -- kc 'kubectx'
 abbr -a -- ll 'ls -alh'
 abbr -a -- s ssh
 abbr -a -- sub 'ssh submit'
