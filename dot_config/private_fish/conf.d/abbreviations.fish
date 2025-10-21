@@ -28,7 +28,7 @@ abbr -a -- gl 'git log --oneline'
 abbr -a -- gps 'git push'
 abbr -a -- gpsu 'git push --set-upstream origin HEAD'
 abbr -a -- gpop 'git stash pop'
-abbr -a -- gpp
+abbr -a -- gpp 'git stash pop'
 abbr -a -- gpl 'git pull'
 abbr -a -- grs 'git restore --staged'
 abbr -a -- gs 'git status'
