@@ -1,4 +1,3 @@
-
 abbr -a -- aba 'chezmoi apply ~/.config/fish/conf.d/abbreviations.fish'
 abbr -a -- abe 'chezmoi edit ~/.config/fish/conf.d/abbreviations.fish'
 abbr -a -- abl 'abbr --show'
@@ -24,8 +23,7 @@ abbr -a -- gd 'git diff'
 abbr -a -- gds 'git diff --staged'
 abbr -a -- gf 'git fetch'
 abbr -a -- gfa 'git fetch --all'
-abbr -a -- gl 'git log --oneline'
-abbr -a -- glr 'git log --oneline --color=always --decorate --max-count 15 | tac'
+abbr -a -- gl 'git log --oneline --max-count 15'
 abbr -a -- gps 'git push'
 abbr -a -- gpsu 'git push --set-upstream origin HEAD'
 abbr -a -- gpop 'git stash pop'
@@ -43,8 +41,8 @@ abbr -a -- ip-remote 'curl --silent ipinfo.io/ip | tee /dev/tty | pbcopy'
 abbr -a -- ip-local 'ipconfig getifaddr en0 | tee /dev/tty | pbcopy'
 abbr -a -- ipu ip-update # function
 abbr -a -- khrl known_hosts_remove_line
-abbr -a -- k 'kubectl'
-abbr -a -- kc 'kubectx'
+abbr -a -- k kubectl
+abbr -a -- kc kubectx
 abbr -a -- ll 'ls -alh'
 abbr -a -- s ssh
 abbr -a -- sub 'ssh submit'
