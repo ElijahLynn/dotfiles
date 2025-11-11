@@ -6,6 +6,7 @@ abbr -a -- c 'cht.sh'
 abbr -a -- cdgr 'cd (git rev-parse --show-toplevel)'
 abbr -a -- ch chezmoi
 abbr -a -- dep 'ssh deploy'
+abbr -a -- digs 'dig +short'
 abbr -a -- g git
 abbr -a -- ga 'git add'
 abbr -a -- gaa 'git add --all'
