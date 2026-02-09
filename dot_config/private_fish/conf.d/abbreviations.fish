@@ -39,6 +39,8 @@ abbr -a -- gs 'git status'
 abbr -a -- gst 'git stash'
 abbr -a -- hm 'history --merge'
 abbr -a -- hoe 'sudo vim /etc/hosts'
+abbr -a -- ipr 'ip-remote'
+abbr -a -- ipl 'ip-local'
 abbr -a -- ip-remote 'curl --silent ipinfo.io/ip | tee /dev/tty | pbcopy'
 abbr -a -- ip-local 'ipconfig getifaddr en0 | tee /dev/tty | pbcopy'
 abbr -a -- ipu ip-update # function
