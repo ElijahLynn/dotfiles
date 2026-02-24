@@ -4,11 +4,10 @@ abbr -a -- abl 'abbr --show'
 abbr -a -- abs 'source ~/.config/fish/conf.d/abbreviations.fish'
 abbr -a -- c 'cht.sh'
 abbr -a -- cdgr 'cd (git rev-parse --show-toplevel)'
-abbr -a -- ch 'chezmoi'
-abbr -a -- co 'gh pr checkout'
+abbr -a -- ch chezmoi
 abbr -a -- dep 'ssh deploy'
 abbr -a -- digs 'dig +short'
-abbr -a -- g 'git'
+abbr -a -- g git
 abbr -a -- ga 'git add'
 abbr -a -- gaa 'git add --all'
 abbr -a -- gap 'git add --patch'
@@ -19,6 +18,7 @@ abbr -a -- gcp 'git cherry-pick'
 abbr -a -- gam 'git commit --amend --no-edit'
 abbr -a -- gcm 'git commit --message'
 abbr -a -- gg 'git graph'
+abbr -a -- ghco 'gh pr checkout'
 abbr -a -- ghpr 'gh pr create --assignee @me --body-file .github/pull_request_template.md --editor'
 abbr -a -- ghprd 'gh pr create --assignee @me --body-file .github/pull_request_template.md --editor --draft'
 abbr -a -- ghprf 'gh pr create --assignee @me --fill'
@@ -40,16 +40,16 @@ abbr -a -- gs 'git status'
 abbr -a -- gst 'git stash'
 abbr -a -- hm 'history --merge'
 abbr -a -- hoe 'sudo vim /etc/hosts'
-abbr -a -- ipr 'ip-remote'
-abbr -a -- ipl 'ip-local'
+abbr -a -- ipr ip-remote
+abbr -a -- ipl ip-local
 abbr -a -- ip-remote 'curl --silent ipinfo.io/ip | tee /dev/tty | pbcopy'
 abbr -a -- ip-local 'ipconfig getifaddr en0 | tee /dev/tty | pbcopy'
-abbr -a -- ipu 'ip-update' # function
-abbr -a -- khrl 'known_hosts_remove_line'
-abbr -a -- k 'kubectl'
-abbr -a -- kc 'kubectx'
+abbr -a -- ipu ip-update # function
+abbr -a -- khrl known_hosts_remove_line
+abbr -a -- k kubectl
+abbr -a -- kc kubectx
 abbr -a -- ll 'ls -alh'
-abbr -a -- s 'ssh'
+abbr -a -- s ssh
 abbr -a -- sub 'ssh submit'
-abbr -a -- tf 'terraform'
-abbr -a -- ts 'tcp_states'
+abbr -a -- tf terraform
+abbr -a -- ts tcp_states
