@@ -4,10 +4,11 @@ abbr -a -- abl 'abbr --show'
 abbr -a -- abs 'source ~/.config/fish/conf.d/abbreviations.fish'
 abbr -a -- c 'cht.sh'
 abbr -a -- cdgr 'cd (git rev-parse --show-toplevel)'
-abbr -a -- ch chezmoi
+abbr -a -- ch 'chezmoi'
+abbr -a -- co 'gh pr checkout'
 abbr -a -- dep 'ssh deploy'
 abbr -a -- digs 'dig +short'
-abbr -a -- g git
+abbr -a -- g 'git'
 abbr -a -- ga 'git add'
 abbr -a -- gaa 'git add --all'
 abbr -a -- gap 'git add --patch'
@@ -43,12 +44,12 @@ abbr -a -- ipr 'ip-remote'
 abbr -a -- ipl 'ip-local'
 abbr -a -- ip-remote 'curl --silent ipinfo.io/ip | tee /dev/tty | pbcopy'
 abbr -a -- ip-local 'ipconfig getifaddr en0 | tee /dev/tty | pbcopy'
-abbr -a -- ipu ip-update # function
-abbr -a -- khrl known_hosts_remove_line
-abbr -a -- k kubectl
-abbr -a -- kc kubectx
+abbr -a -- ipu 'ip-update' # function
+abbr -a -- khrl 'known_hosts_remove_line'
+abbr -a -- k 'kubectl'
+abbr -a -- kc 'kubectx'
 abbr -a -- ll 'ls -alh'
-abbr -a -- s ssh
+abbr -a -- s 'ssh'
 abbr -a -- sub 'ssh submit'
-abbr -a -- tf terraform
-abbr -a -- ts tcp_states
+abbr -a -- tf 'terraform'
+abbr -a -- ts 'tcp_states'
